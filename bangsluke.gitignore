@@ -1,0 +1,30 @@
+# Git Ignore File
+
+# Below is a list of files that Git should not track.
+# https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#_ignoring
+
+# ignore all .gslides files to ignore the Website Layouts.gslides file.
+*.gslides
+
+# ignore all .gsheet files to ignore the Tits Group Page Data.gsheet file.
+*.gssheet
+
+# Examples below
+
+## ignore all .a files
+#*.a
+
+## but do track lib.a, even though you're ignoring .a files above
+#!lib.a
+
+## only ignore the TODO file in the current directory, not subdir/TODO
+#/TODO
+
+## ignore all files in any directory named build
+#build/
+
+## ignore doc/notes.txt, but not doc/server/arch.txt
+#doc/*.txt
+
+## ignore all .pdf files in the doc/ directory and any of its subdirectories
+#doc/**/*.pdf
