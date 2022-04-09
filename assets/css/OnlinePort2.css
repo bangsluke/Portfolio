@@ -1,0 +1,379 @@
+/* OnlinePortfolio Styling Guide. */
+
+/* The main css style file used for the Online Portfolio styling. */
+
+/* CSS Best Coding Practice
+	https://github.com/bangsluke/bangsluke.github.io/blob/main/README.md#css-best-coding-practice
+*/
+
+/*:root is a pseudo-class selector that matches the root element of the document, usually the html element. By creating your variables in :root, they will be available globally and can be accessed from any other selector in the style sheet.*/
+
+:root {
+  /*CSS variable - RLE grey*/
+  --main-style-color: #808080;
+  /*CSS variable - RLE green*/
+  --main-accent-color: #00644c;
+  /*CSS variable - Sidebar grey*/
+  --main-background-color: #a6a6a6;
+  --main-font-family: "Calibri", sans-serif;
+  /*CSS variable*/
+  line-height: 15px;
+  font-family: var(--main-font-family, sans-serif);
+}
+
+/*Container original size for most screens.*/
+
+.container {
+  font-size: 1.5em;
+  min-height: 300px;
+  height: max-content;
+  /*Controls the main width of the page.*/
+  width: 80%;
+  /*Offsets the page by 10% of the width of the whole screen to center it as width is 80%.*/
+  margin-left: 10%;
+  background: LightGray;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 28% 1fr;
+  grid-template-rows: auto auto 50px;
+  grid-template-areas: "sidebar header" "sidebar content" "sidebar footer";
+}
+
+/*When screen size is less than 500px, change the layout of the container.*/
+
+/*Sidebar compresses in underneath the header to better support mobile devices.*/
+
+@media (max-width: 500px) {
+  .container {
+    /* background: blue; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 1fr 50px;
+    grid-template-areas: "header" "sidebar" "content" "footer";
+  }
+}
+
+/* Header Sections */
+
+.header {
+  /* background: LightSkyBlue; */
+  background: white;
+  background: LightGray;
+  grid-area: header;
+  min-height: 100px;
+  /*Controls the main width of the header section within the container.*/
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  grid-template-areas: "header-logo-section" "header-line-break-section" "header-name-section";
+}
+
+.header-logo-section {
+  /* background: LightSkyBlue; */
+  grid-area: header-logo-section;
+  min-height: 50px;
+}
+
+.header-line-break-section {
+  /* background: LightSalmon; */
+  grid-area: header-line-break-section;
+  min-height: 5px;
+}
+
+.header-name-section {
+  /* background: lightpink; */
+  grid-area: header-name-section;
+  min-height: 80px;
+}
+
+/* Sidebar Sections */
+
+.sidebar {
+  /* background: LightSalmon; */
+  background: var(--main-background-color, black);
+  grid-area: sidebar;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    "sidebar-picture-section"
+    "sidebar-summary-section"
+    "sidebar-skills-section";
+}
+
+.sidebar-picture-section {
+  /* background: LightSkyBlue; */
+  grid-area: sidebar-picture-section;
+  min-height: 50px;
+  height: max-content;
+}
+
+/* Content Sections */
+
+.content {
+  /* background: PaleTurquoise; */
+  background: white;
+  background: LightGray;
+  grid-area: content;
+  min-height: 300px;
+  height: max-content;
+  /*Controls the main width of the header section within the container.*/
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    "content-profile-section"
+    "content-experience-section"
+    "content-interests-section";
+}
+
+.content-profile-section {
+  /* background: LightSkyBlue; */
+  grid-area: content-profile-section;
+  min-height: 50px;
+  height: max-content;
+}
+
+.content-experience-section {
+  /* background: LightSalmon; */
+  grid-area: content-experience-section;
+  min-height: 50px;
+  height: max-content;
+}
+
+.content-interests-section {
+  /* background: lightpink; */
+  grid-area: content-interests-section;
+  min-height: 50px;
+  height: max-content;
+}
+
+/* Footer Section */
+
+.footer {
+  /* background: lightpink; */
+  grid-area: footer;
+  width: 100%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr;
+  grid-template-areas: "footer-details-section footer-button-section footer-icons-section";
+}
+
+.footer-details-section {
+  /* background: LightSkyBlue; */
+  grid-area: footer-details-section;
+  height: max-content;
+  justify-self: center;
+  align-content: center;
+}
+
+.footer-button-section {
+  /* background: LightSalmon; */
+  grid-area: footer-button-section;
+  height: max-content;
+  justify-self: center;
+  align-content: center;
+}
+
+.footer-icons-section {
+  /* background: green; */
+  grid-area: footer-icons-section;
+  height: max-content;
+  justify-self: center;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+/*Text styling*/
+
+h1 {
+  font-size: 60pt;
+  font-weight: 400;
+  color: var(--main-style-color, black);
+  text-transform: uppercase;
+  margin: 30px 0px 10px 0px;
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 20pt;
+  }
+}
+
+/*Change the formatting of h1 text on hover over*/
+
+h1:hover {
+  color: black;
+  /*For older browsers*/
+  color: var(--main-accent-color, black);
+  font-size: 62pt;
+}
+
+h2 {
+  font-size: 50pt;
+  font-weight: 400;
+  color: var(--main-style-color, black);
+  text-transform: uppercase;
+  margin: 30px 0px 40px 0px;
+  text-align: left;
+}
+
+/*Change the formatting of h1 text on hover over*/
+
+h2:hover {
+  color: black;
+  /*For older browsers*/
+  color: var(--main-accent-color, black);
+  font-size: 52pt;
+}
+
+h3 {
+  text-align: left;
+  padding: 0px 0px 0px 80px;
+  line-height: 20px;
+  color: var(--main-style-color, black);
+}
+
+h4 {
+  text-align: left;
+  padding: 0px 0px 0px 80px;
+  line-height: 5px;
+  color: var(--main-style-color, black);
+  font-style: italic;
+}
+
+/*Paragraph formatting*/
+
+p {
+  font-size: 20px;
+}
+
+.p-bodytext {
+  text-align: left;
+  padding: 0px 0px 0px 80px;
+  line-height: 20px;
+  color: var(--main-style-color, black);
+}
+
+/*Change the formatting of paragraph text on hover over*/
+
+p:hover {
+  color: black;
+  color: var(--main-accent-color, black);
+}
+
+/*Styling for all images on page*/
+
+img {
+  margin-right: 10px;
+  margin-left: 10px;
+  display: block;
+  margin: auto;
+  height: 5em;
+  width: auto;
+}
+
+/*Styling for professional profile image in sidebar*/
+
+.img-circle {
+  border: 0px solid var(--main-style-color, black);
+  border-radius: 50%;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+}
+
+/*Styling for RLE logo*/
+
+.img-Logo {
+  float: right;
+}
+
+/*Styling for images in footer*/
+
+.img-footer {
+  height: 30px;
+  width: auto;
+}
+
+/* Styling for header section page break */
+
+.top-section-pagebreak {
+  /*For older browsers*/
+  color: #808080;
+  color: var(--main-accent-color, black);
+  /*For older browsers*/
+  background-color: #808080;
+  background-color: var(--main-accent-color, black);
+  width: 100%;
+  height: 4px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  border: 0px 0px 0px 0px;
+}
+
+/*Button formatting from https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/modify-fill-mode-of-an-animation*/
+
+button {
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  /*For older browsers*/
+  background-color: var(--main-style-color, black);
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+  height: 40px;
+  font-size: 16pt;
+}
+
+button:hover {
+  animation-name: background-color;
+  /*Key frame name lookup*/
+  animation-duration: 1000ms;
+  /*Time for animation*/
+  animation-fill-mode: forwards;
+  /*Stay changed colour at end*/
+}
+
+@keyframes background-color {
+  100% {
+    background-color: var(--main-accent-color, black);
+    /*The final background colour*/
+  }
+}
+
+/* CSS Tips and Tricks. */
+
+/* Change the background colour of when a user highlights text to orange. */
+
+h1::selection {
+  background: var(--accent-color-orange, orange);
+}
+
+strong::selection {
+  background: var(--accent-color-orange, orange);
+}
+
+a::selection {
+  background: var(--accent-color-orange, orange);
+}
+
+p::selection {
+  background: var(--accent-color-orange, orange);
+}
+
+/* Smooth the scrolling function of any internal hyperlinks. */
+
+html {
+  scroll-behavior: smooth;
+}

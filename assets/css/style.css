@@ -105,7 +105,7 @@ html {
 
 body {
   background-color: #000;
-  background-image: url("../../images/bg.jpg");
+  background-image: url("../../assets/images/bg.jpg");
   background-size: cover;
   background-position: top center;
 }

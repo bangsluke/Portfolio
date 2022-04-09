@@ -1,0 +1,526 @@
+/* OnlinePortfolio Styling Guide. */
+
+/* The main css style file used for the Online Portfolio styling. */
+
+/* CSS Best Coding Practice
+	https://github.com/bangsluke/bangsluke.github.io/blob/main/README.md#css-best-coding-practice
+*/
+
+/*:root is a pseudo-class selector that matches the root element of the document, usually the html element. By creating your variables in :root, they will be available globally and can be accessed from any other selector in the style sheet.*/
+
+:root {
+    --main-style-color: #808080;
+    /*CSS variable - RLE grey*/
+    --main-accent-color: #00644C;
+    /*CSS variable - RLE green*/
+    --main-font-family: 'Calibri', sans-serif;
+    /*CSS variable*/
+    line-height: 15px;
+}
+
+/*Main page background colour*/
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+    /*For older browsers*/
+    font-family: var(--main-font-family, sans-serif);
+    z-index: 0;
+}
+
+/*Main left/right ids*/
+
+#left {
+    float: left;
+    width: 25%;
+    padding: 40px 40px 40px 40px;
+}
+
+#right {
+    float: right;
+    width: 60%;
+    padding: 0px 40px 0px 40px;
+}
+
+/*Styling for all images on page*/
+
+img {
+    margin-right: 10px;
+    margin-left: 10px;
+    display: block;
+    margin: auto;
+}
+
+/*Styling for images on hover over*/
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+/*Text styling*/
+
+h1 {
+    font-size: 60pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 30px 0px 10px 0px;
+    text-align: right;
+}
+
+/*Change the formatting of h1 text on hover over*/
+
+h1:hover {
+    color: black;
+    /*For older browsers*/
+    color: var(--main-accent-color, black);
+    font-size: 62pt;
+}
+
+h2 {
+    font-size: 30pt;
+    font-weight: 400;
+    font-style: bold;
+    text-transform: uppercase;
+    height: 12px;
+}
+
+h3 {
+    font-size: 12pt;
+    font-style: bold;
+    padding: 30px 0px, 0px, 0px;
+    height: 10px;
+}
+
+h4 {
+    font-size: 10pt;
+    font-style: italic;
+    margin: 0px 0px, -15px, 0px;
+    height: 5px;
+}
+
+/*Header links formatting*/
+
+a {
+    font-size: 10pt;
+    text-align: right;
+    color: var(--main-accent-color, black);
+    text-decoration: none;
+}
+
+a:link {
+    /* normal link */
+    color: var(--main-accent-color, black);
+    text-decoration: none;
+}
+
+a:visited {
+    /* visited link */
+    color: var(--main-accent-color, black);
+    text-decoration: none;
+}
+
+a:hover {
+    /* hover over link */
+    color: var(--main-accent-color, black);
+    color: green;
+    font-size: 12pt;
+    font-style: italic;
+}
+
+a:active {
+    /* selected link */
+    color: var(--main-accent-color, black);
+}
+
+#nav-bar {
+    color: var(--main-accent-color, black);
+    animation: appear 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% {
+        color: white;
+    }
+    100% {}
+}
+
+/*Paragraph formatting*/
+
+p {
+    font-size: 12pt;
+    margin: 0px 0px, 0px, 0px;
+}
+
+/*Change the formatting of paragraph text on hover over*/
+
+p:hover {
+    color: black;
+}
+
+.header-bodytext {
+    text-align: left;
+    padding: 00px 00px 0px 20px;
+}
+
+.p-bodytext {
+    text-align: left;
+    padding: 0px 00px 0px 40px;
+}
+
+/*Styling for sidebar section*/
+
+.sidebar {
+    /*Position*/
+    position: relative;
+    /*Relative position to its original position*/
+    position: fixed;
+    top: -10px;
+    /*From the very top of the screen*/
+    /*right*/
+    /*bottom*/
+    left: -10px;
+    /*From the very right of the screen*/
+    /*Box sizes*/
+    margin: 0px;
+    /*Outer box*/
+    border: 1px solid #000000;
+    padding: 20px;
+    width: inherit;
+    height: 90%;
+    /*Styling*/
+    background-color: #A6A6A6;
+    text-align: right;
+    /*Text color*/
+    color: white;
+    /*Order*/
+    z-index: 2;
+    /*Brings the sidebar to the foreground*/
+}
+
+/*Styling for professional profile image in sidebar*/
+
+.img-circle {
+    border: 0px solid var(--main-style-color, black);
+    border-radius: 50%;
+    margin: auto;
+}
+
+/*Styling for sidebar pagebreak*/
+
+.sidebar-pagebreak {
+    color: white;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+}
+
+/* Styling for the skills section on the left */
+
+.skills-container {
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* grid-template-rows: repeat(3, 1fr); is another alterantive for the code below*/
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+/*Styling for all small logo images in sidebar*/
+
+.skills-img {
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 60px;
+    width: auto;
+    /*Change so that height is set but width is relative to original width*/
+    display: block;
+    margin: auto;
+}
+
+/*Styling for main page right hand side section*/
+
+.right-section {
+    /*Position*/
+    position: relative;
+    /*Relative position to its original position*/
+    top: 0px;
+    /*From the very top of the screen*/
+    right: 0px;
+    /*From the very right of the screen*/
+    bottom: 0px;
+    left: inherit;
+    /*Box sizes*/
+    margin: 0px;
+    /*Outer box*/
+    border: 0px solid #1c8841;
+    padding: 0px 100px 0px 100px;
+    width: inhert;
+    height: 90%;
+    /*Styling*/
+    background-color: white;
+    /*text-align:*/
+    line-height: 1;
+    /*Text color*/
+    /*color:*/
+}
+
+/*Styling for main page top section*/
+
+.top-section {
+    /*Position*/
+    position: fixed;
+    top: 0px;
+    /*From the very top of the screen*/
+    right: 0px;
+    /*From the very right of the screen*/
+    /*bottom*/
+    left: inherit;
+    /*Box sizes*/
+    margin: 0px;
+    /*Outer box*/
+    border: 0px solid #1c8841;
+    width: 100%;
+    /*height:*/
+    /*Styling*/
+    background-color: white;
+    text-align: right;
+    /*Text color*/
+    color: #808080;
+    /*For older browsers*/
+    color: var(--main-style-color, black);
+    /*Order*/
+    z-index: 1;
+    /*Brings the top section forward*/
+}
+
+/*Styling for RLE logo section on mainpage*/
+
+.top-logo-section {
+    height: 80px;
+    float: right;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+/*Styling for top section pagebreak on mainpage*/
+
+.top-section-pagebreak {
+    color: #808080;
+    /*For older browsers*/
+    color: var(--main-accent-color, black);
+    background-color: #808080;
+    /*For older browsers*/
+    background-color: var(--main-accent-color, black);
+    width: 100%;
+    height: 2px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+}
+
+/*Styling for section containing main header on mainpage*/
+
+.header-text-section {
+    /*Position*/
+    position: absolute;
+    /*top:*/
+    right: 0px;
+    /*bottom*/
+    /*left*/
+    /*Box sizes*/
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+    width: 100%;
+    height: 60px;
+    background-color: pink;
+    line-height: 0px;
+    display: block;
+}
+
+.fadeout-section {
+    /*Position*/
+    position: static;
+    /*top*/
+    /*right*/
+    /*bottom*/
+    /*left*/
+    /*Box sizes*/
+    margin: 0px;
+    /*Outer box*/
+    border: 0px solid #1c8841;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 10px;
+    /*Styling*/
+    background: linear-gradient(180deg, white, rgba(255, 255, 255, 0));
+}
+
+/*Styling for main page text section, containing several sections*/
+
+.mainpage-text-section {
+    /*Position*/
+    position: relative;
+    /*Relative position to its original position*/
+    top: 160px;
+    /*From the very top of the screen*/
+    right: 0px;
+    /*From the very right of the screen*/
+    bottom: 0px;
+    left: inherit;
+    /*Box sizes*/
+    margin: 0px;
+    /*Outer box*/
+    border: 0px solid #1c8841;
+    padding: 0px 0px 0px 0px;
+    /*width:*/
+    height: 100%;
+    /*Styling*/
+    background-color: white;
+    /*text-align:*/
+    /*Text color*/
+    /*color:*/
+}
+
+/*Styling for main page profile section*/
+
+.profile-section {
+    /*Position*/
+    position: absolute;
+    /*Absolute locks the element in place relative to its parent container*/
+    position: static;
+    /*Static ignores top, left etc*/
+    /*top*/
+    /*right*/
+    /*bottom*/
+    /*left*/
+    /*Box sizes*/
+    margin: 0px;
+    /*Outer box*/
+    border: 0px solid #1c8841;
+    padding: 0px 0px 0px 0px;
+    /*width:*/
+    /*height:*/
+    /*Styling*/
+    background-color: white;
+    text-align: left;
+    /*Text color*/
+    color: #808080;
+    /*For older browsers*/
+    color: var(--main-style-color, black);
+}
+
+/*Styling for main page experience section*/
+
+.experience-section {
+    /*Position*/
+    position: absolute;
+    /*Absolute locks the element in place relative to its parent container*/
+    position: static;
+    /*Static ignores top, left etc*/
+    /*top*/
+    /*right*/
+    /*bottom*/
+    /*left*/
+    /*Box sizes*/
+    margin: 0px;
+    /*Outer box*/
+    border: 0px solid #1c8841;
+    padding: 0px 0px 0px 0px;
+    /*width:*/
+    /*height:*/
+    /*Styling*/
+    background-color: white;
+    text-align: left;
+    /*Text color*/
+    color: #808080;
+    /*For older browsers*/
+    color: var(--main-style-color, black);
+}
+
+/*Styling for main page final-interests-section section*/
+
+.final-interests-section {
+    /*Position*/
+    position: static;
+    /*Static ignores top, left etc*/
+    /*top*/
+    /*right*/
+    /*bottom*/
+    /*left*/
+    /*Box sizes*/
+    margin: 0px;
+    /*Outer box*/
+    border: 0px solid #1c8841;
+    padding: 0px 0px 0px 0px;
+    /*width:*/
+    /*height:*/
+    /*Styling*/
+    background-color: white;
+    text-align: left;
+    /*Text color*/
+    color: #808080;
+    /*For older browsers*/
+    color: var(--main-style-color, black);
+}
+
+/*Button formatting from https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/modify-fill-mode-of-an-animation*/
+
+button {
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    /*For older browsers*/
+    background-color: var(--main-accent-color, black);
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+}
+
+button:hover {
+    animation-name: background-color;
+    /*Key frame name lookup*/
+    animation-duration: 1000ms;
+    /*Time for animation*/
+    animation-fill-mode: forwards;
+    /*Stay changed colour at end*/
+}
+
+@keyframes background-color {
+    100% {
+        background-color: #00b68a;
+        /*The final background colour*/
+    }
+}
+
+
+/* CSS Tips and Tricks. */
+
+/* Change the background colour of when a user highlights text to orange. */
+
+h1::selection {
+	background: var(--accent-color-orange, orange);
+}
+
+strong::selection {
+	background: var(--accent-color-orange, orange);
+}
+
+a::selection {
+	background: var(--accent-color-orange, orange);
+}
+
+p::selection {
+	background: var(--accent-color-orange, orange);
+}
+
+/* Smooth the scrolling function of any internal hyperlinks. */
+
+html{
+	scroll-behavior: smooth;
+}
