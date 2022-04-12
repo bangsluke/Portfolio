@@ -1,47 +1,54 @@
 # Portfolio
-A set of Portfolio pages for myself
 
-# vCard - Personal portfolio
+## About
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+A set of Portfolio pages for myself.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+### Status
 
-## Demo
+<!-- Project Badges -->
+<p align="center">
+    <a href="https://github.com/bangsluke/Portfolio" alt="Stable release version badge">
+        <img src="https://img.shields.io/badge/version-0.1.0-blue)" />
+    </a>
+    <a href="https://app.netlify.com/sites/bangsluke-portfolio/deploys">
+        <img src="https://api.netlify.com/api/v1/badges/c401143c-a8f6-43e7-a788-64671b9972ef/deploy-status" alt="Netlify status badge" />
+    </a>
+</p>
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+<!-- Built With Badges -->
 
-## Prerequisites
+### Built With
 
-Before you begin, ensure you have met the following requirements:
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=whitek">
+  <br>
+</p>
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+### Author
 
-## Installing vCard
+Drop me an email at [bangsluke@gmail.com](mailto:bangsluke@gmail.com) or visit my [GitHub account](https://github.com/bangsluke).
 
-To install **vCard**, follow these steps:
+## Key Features
 
-Linux and macOS:
+- Contact details on how to get a hold of me.
+- Details on my past work experience.
 
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## Getting Started
 
-Windows:
+There is no need to install, just visit the [site here](https://bangsluke-portfolio.netlify.app).
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## Credit
 
-## Contact
+The base of this Portfolio comes from vCard; a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
 
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+https://github.com/codewithsadee/vcard-personal-portfolio.git
 
-## License
+## Author Notes
 
-This project is **free to use** and does not contains any license.
+### Next Steps
+
+Clean up the Portfolio pages and develop in React?
