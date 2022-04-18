@@ -11,8 +11,8 @@ A set of Portfolio pages for myself.
     <a href="https://github.com/bangsluke/Portfolio" alt="Stable release version badge">
         <img src="https://img.shields.io/badge/version-0.1.0-blue)" />
     </a>
-    <a href="https://app.netlify.com/sites/bangsluke-portfolio/deploys">
-        <img src="https://api.netlify.com/api/v1/badges/c401143c-a8f6-43e7-a788-64671b9972ef/deploy-status" alt="Netlify status badge" />
+    <a href="https://bangsluke-portfolio.netlify.app/">
+        <img src="https://api.netlify.com/api/v1/badges/74382ffe-3ab7-4286-b952-4f39139e869c/deploy-status" alt="Netlify status badge" />
     </a>
 </p>
 
