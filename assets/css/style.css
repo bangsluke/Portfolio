@@ -911,17 +911,47 @@ article.active {
 	margin-bottom: 15px;
 }
 
+/* Style the skill text holder div. */
 .skill .title-wrapper {
+	/* background-color: blue; */
 	display: flex;
 	align-items: center;
-	gap: 5px;
-	margin-bottom: 8px;
+	gap: 15px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.skill-image {
+	/* background-color: #ff6382; */
+	width: 40px;
+	height: auto;
+}
+
+.invert-colour {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+
+.skill-name {
+	/* background-color: green; */
+	font-size: medium;
+	width: 20%;
+	min-width: 20%;
 }
 
 .skill .title-wrapper data {
+	/* background-color: aqua; */
+	width: 8%;
 	color: var(--light-gray);
 	font-size: var(--fs-7);
 	font-weight: var(--fw-300);
+	text-align: center;
+}
+
+.skill-description {
+	/* background-color: darkcyan; */
+	color: white;
+	font-size: small;
 }
 
 .skill-progress-bg {
@@ -1148,18 +1178,19 @@ article.active {
 	filter: grayscale(1) invert(1);
 }
 
+/* Style the text at the bottom of the contact me section. */
 .contact-me-section {
 	white-space: nowrap;
-	display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
-
-/* Style the text at the bottom of the contact me section. */
 .contact-text {
 	color: white;
 }
-
-.contact-email {
+.contact-link {
 	font-style: bold;
+	padding: 0 5px; /* Add some padding to simulate a space either side of the word. */
 }
 
 /* Form Section */
