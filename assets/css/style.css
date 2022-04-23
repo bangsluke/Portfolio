@@ -9,38 +9,14 @@
 
 	/* gradient */
 
-	--bg-gradient-onyx: linear-gradient(
-		to bottom right,
-		hsl(240, 1%, 25%) 3%,
-		hsl(0, 0%, 19%) 97%
-	);
-	--bg-gradient-jet: linear-gradient(
-			to bottom right,
-			hsla(240, 1%, 18%, 0.251) 0%,
-			hsla(240, 2%, 11%, 0) 100%
-		),
+	--bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
+	--bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%),
 		hsl(240, 2%, 13%);
-	--bg-gradient-yellow-1: linear-gradient(
-		to bottom right,
-		hsl(45, 100%, 71%) 0%,
-		hsla(36, 100%, 69%, 0) 50%
-	);
-	--bg-gradient-yellow-2: linear-gradient(
-			135deg,
-			hsla(45, 100%, 71%, 0.251) 0%,
-			hsla(35, 100%, 68%, 0) 59.86%
-		),
+	--bg-gradient-yellow-1: linear-gradient(to bottom right, hsl(45, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%);
+	--bg-gradient-yellow-2: linear-gradient(135deg, hsla(45, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86%),
 		hsl(240, 2%, 13%);
-	--border-gradient-onyx: linear-gradient(
-		to bottom right,
-		hsl(0, 0%, 25%) 0%,
-		hsla(0, 0%, 25%, 0) 50%
-	);
-	--text-gradient-yellow: linear-gradient(
-		to right,
-		hsl(45, 100%, 72%),
-		hsl(35, 100%, 68%)
-	);
+	--border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+	--text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
 
 	/* solid */
 
@@ -312,8 +288,7 @@ article.active {
 	background-color: rgba(255, 255, 255, 0.075);
 }
 #profilePicture:hover {
-	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25),
-		0 0 0.5em 0 #ff6382;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #ff6382;
 }
 
 .info-content .name {
@@ -936,17 +911,47 @@ article.active {
 	margin-bottom: 15px;
 }
 
+/* Style the skill text holder div. */
 .skill .title-wrapper {
+	/* background-color: blue; */
 	display: flex;
 	align-items: center;
-	gap: 5px;
-	margin-bottom: 8px;
+	gap: 15px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.skill-image {
+	/* background-color: #ff6382; */
+	width: 40px;
+	height: auto;
+}
+
+.invert-colour {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+
+.skill-name {
+	/* background-color: green; */
+	font-size: medium;
+	width: 20%;
+	min-width: 20%;
 }
 
 .skill .title-wrapper data {
+	/* background-color: aqua; */
+	width: 8%;
 	color: var(--light-gray);
 	font-size: var(--fs-7);
 	font-weight: var(--fw-300);
+	text-align: center;
+}
+
+.skill-description {
+	/* background-color: darkcyan; */
+	color: white;
+	font-size: small;
 }
 
 .skill-progress-bg {
@@ -1173,18 +1178,20 @@ article.active {
 	filter: grayscale(1) invert(1);
 }
 
+/* Style the text at the bottom of the contact me section. */
 .contact-me-section {
 	white-space: nowrap;
-	display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
-
-/* Style the text at the bottom of the contact me section. */
 .contact-text {
 	color: white;
 }
-
-.contact-email {
-	font-style: bold;
+.contact-link {
+	font-weight: bold;
+	padding: 0 5px; /* Add some padding to simulate a space either side of the word. */
+	color: var(--orange-yellow-crayola, white);
 }
 
 /* Form Section */
@@ -1786,8 +1793,7 @@ textarea.form-input::-webkit-resizer {
 		border: 5px solid var(--smoky-black);
 		background: hsla(0, 0%, 100%, 0.1);
 		border-radius: 20px;
-		box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
-			inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+		box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11), inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
 	}
 
 	body::-webkit-scrollbar-thumb:hover {
