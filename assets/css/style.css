@@ -1189,8 +1189,9 @@ article.active {
 	color: white;
 }
 .contact-link {
-	font-style: bold;
+	font-weight: bold;
 	padding: 0 5px; /* Add some padding to simulate a space either side of the word. */
+	color: var(--orange-yellow-crayola, white);
 }
 
 /* Form Section */
