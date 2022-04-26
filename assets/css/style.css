@@ -185,6 +185,11 @@ textarea {
 	font-weight: var(--fw-500);
 }
 
+/* Style text marked to be italic. */
+.italic {
+	font-style: italic;
+}
+
 /* Format the large title at the top of each article/tab. */
 .article-title {
 	position: relative;
@@ -500,15 +505,53 @@ article.active {
 	margin-bottom: 15px;
 }
 
+/* Style the section holding all of the about me text. */
+.about-text-section {
+	/* background-color: #ff6382; */
+	margin-bottom: 40px;
+	width: 100%;
+	color: white;
+}
+
 /* Style the text on the about article. */
-.about-text {
+.about-text-section > p {
+	/* background-color: blue; */
 	color: var(--light-gray);
 	font-size: var(--fs-6);
 	font-weight: var(--fw-300);
 	line-height: 1.6;
+	margin-bottom: 10px;
+	display: inline-block;
 }
-.about-text p {
-	margin-bottom: 15px;
+
+/* Format the link text in each body of text within the site. */
+.about-text-section > p > a {
+	/* background-color: green; */
+	font-size: var(--fs-6);
+	font-weight: bold;
+	line-height: 1.6;
+	color: var(--orange-yellow-crayola, white);
+	display: inline-block;
+}
+
+/* unvisited link */
+a:link {
+	color: red;
+}
+
+/* visited link */
+a:visited {
+	color: green;
+}
+
+/* mouse over link */
+a:hover {
+	color: hotpink;
+}
+
+/* selected link */
+a:active {
+	color: blue;
 }
 
 /* Service Section (What I'm Doing) */
@@ -895,6 +938,7 @@ article.active {
 	color: var(--light-gray);
 	font-weight: var(--fw-300);
 	line-height: 1.6;
+	margin-bottom: 10px;
 }
 
 /* My Skills Section */
@@ -928,8 +972,8 @@ article.active {
 }
 
 .invert-colour {
-	-webkit-filter: invert(1);
-	filter: invert(1);
+	-webkit-filter: invert(100%);
+	filter: invert(100%) !important;
 }
 
 .skill-name {
@@ -1179,25 +1223,40 @@ article.active {
 }
 
 /* Style the text at the bottom of the contact me section. */
-.contact-me-section {
-	white-space: nowrap;
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-}
-.contact-text {
-	color: white;
-}
-.contact-link {
-	font-weight: bold;
-	padding: 0 5px; /* Add some padding to simulate a space either side of the word. */
-	color: var(--orange-yellow-crayola, white);
-}
 
 /* Form Section */
 
 .contact-form {
 	margin-bottom: 10px;
+}
+
+/* Style the section holding all of the contact me text. */
+.contact-me-section {
+	/* background-color: #ff6382; */
+	margin-bottom: 40px;
+	width: 100%;
+	color: white;
+}
+
+/* Style the text on the contact article. */
+.contact-me-section > p {
+	/* background-color: blue; */
+	color: var(--light-gray);
+	font-size: var(--fs-6);
+	font-weight: var(--fw-300);
+	line-height: 1.6;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+/* Format the link text in each body of text within the site. */
+.contact-me-section > p > a {
+	/* background-color: green; */
+	font-size: var(--fs-6);
+	font-weight: bold;
+	line-height: 1.6;
+	color: var(--orange-yellow-crayola, white);
+	display: inline-block;
 }
 
 .form-title {
@@ -1394,10 +1453,6 @@ textarea.form-input::-webkit-resizer {
 
 	.about .article-title {
 		margin-bottom: 20px;
-	}
-
-	.about-text {
-		margin-bottom: 40px;
 	}
 
 	/* service */
