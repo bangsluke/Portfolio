@@ -12,8 +12,8 @@ sidebarBtn.addEventListener("click", function () {
 	elementToggleFunc(sidebar);
 });
 
-// Testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+// References variables
+const referencesItem = document.querySelectorAll("[data-references-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
@@ -24,26 +24,26 @@ const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 
 // Modal toggle function
-const testimonialsModalFunc = function () {
+const referencesModalFunc = function () {
 	modalContainer.classList.toggle("active");
 	overlay.classList.toggle("active");
 };
 
 // Add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-	testimonialsItem[i].addEventListener("click", function () {
-		modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-		modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-		modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-		modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+for (let i = 0; i < referencesItem.length; i++) {
+	referencesItem[i].addEventListener("click", function () {
+		modalImg.src = this.querySelector("[data-references-avatar]").src;
+		modalImg.alt = this.querySelector("[data-references-avatar]").alt;
+		modalTitle.innerHTML = this.querySelector("[data-references-title]").innerHTML;
+		modalText.innerHTML = this.querySelector("[data-references-text]").innerHTML;
 
-		testimonialsModalFunc();
+		referencesModalFunc();
 	});
 }
 
 // Add click event to modal close button
-// ModalCloseBtn.addEventListener("click", testimonialsModalFunc);
-// Overlay.addEventListener("click", testimonialsModalFunc);
+// ModalCloseBtn.addEventListener("click", referencesModalFunc);
+// Overlay.addEventListener("click", referencesModalFunc);
 
 // Custom select variables
 const select = document.querySelector("[data-select]");
