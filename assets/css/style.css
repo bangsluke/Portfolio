@@ -190,6 +190,11 @@ textarea {
 	font-style: italic;
 }
 
+/* Style text marked to be bold. */
+.bold {
+	font-weight: var(--fw-600, bolder);
+}
+
 /* Format the large title at the top of each article/tab. */
 .article-title {
 	position: relative;
@@ -602,15 +607,15 @@ a:active {
 	line-height: 1.6;
 }
 
-/* Testimonials Section */
+/* References Section */
 
-.testimonials {
+.references {
 	margin-bottom: 30px;
 }
-.testimonials-title {
+.references-title {
 	margin-bottom: 20px;
 }
-.testimonials-list {
+.references-list {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -623,11 +628,11 @@ a:active {
 	overscroll-behavior-inline: contain;
 	scroll-snap-type: inline mandatory;
 }
-.testimonials-item {
+.references-item {
 	min-width: 100%;
 	scroll-snap-align: center;
 }
-.testimonials-avatar-box {
+.references-avatar-box {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -636,10 +641,10 @@ a:active {
 	border-radius: 14px;
 	box-shadow: var(--shadow-1);
 }
-.testimonials-item-title {
+.references-item-title {
 	margin-bottom: 7px;
 }
-.testimonials-text {
+.references-text {
 	color: var(--light-gray);
 	font-size: var(--fs-6);
 	font-weight: var(--fw-300);
@@ -651,7 +656,7 @@ a:active {
 	overflow: hidden;
 }
 
-/* Testimonials Modal */
+/* References Modal */
 
 .modal-container {
 	position: fixed;
@@ -693,7 +698,7 @@ a:active {
 	visibility: visible;
 	pointer-events: all;
 }
-.testimonials-modal {
+.references-modal {
 	background: var(--eerie-black-2);
 	position: relative;
 	padding: 15px;
@@ -706,7 +711,7 @@ a:active {
 	transition: var(--transition-1);
 	z-index: 2;
 }
-.modal-container.active .testimonials-modal {
+.modal-container.active .references-modal {
 	transform: scale(1);
 	opacity: 1;
 }
@@ -939,6 +944,26 @@ a:active {
 	font-weight: var(--fw-300);
 	line-height: 1.6;
 	margin-bottom: 10px;
+}
+
+/* Style the key achievement text. */
+.timeline-text-achievement > p {
+	/* background-color: blue; */
+	color: var(--light-gray);
+	font-size: var(--fs-6);
+	line-height: 1.6;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+/* Format the link text in each body of text within the site. */
+.timeline-text > a {
+	/* background-color: green; */
+	font-size: var(--fs-6);
+	font-weight: bold;
+	line-height: 1.6;
+	color: var(--orange-yellow-crayola, white);
+	display: inline-block;
 }
 
 /* My Skills Section */
@@ -1474,13 +1499,13 @@ textarea.form-input::-webkit-resizer {
 		text-align: left;
 	}
 
-	/* testimonials */
+	/* references */
 
-	.testimonials-title {
+	.references-title {
 		margin-bottom: 25px;
 	}
 
-	.testimonials-list {
+	.references-list {
 		gap: 30px;
 		margin: 0 -30px;
 		padding: 30px;
@@ -1492,32 +1517,32 @@ textarea.form-input::-webkit-resizer {
 		padding-top: 25px;
 	}
 
-	.testimonials-avatar-box {
+	.references-avatar-box {
 		transform: translate(30px, -30px);
 		border-radius: 20px;
 	}
 
-	.testimonials-avatar-box img {
+	.references-avatar-box img {
 		width: 80px;
 	}
 
-	.testimonials-item-title {
+	.references-item-title {
 		margin-bottom: 10px;
 		margin-left: 95px;
 	}
 
-	.testimonials-text {
+	.references-text {
 		line-clamp: 2;
 		-webkit-line-clamp: 2;
 	}
 
-	/* testimonials modal */
+	/* references modal */
 
 	.modal-container {
 		padding: 20px;
 	}
 
-	.testimonials-modal {
+	.references-modal {
 		display: flex;
 		justify-content: flex-start;
 		align-items: stretch;
@@ -1661,9 +1686,9 @@ textarea.form-input::-webkit-resizer {
    * ABOUT
    */
 
-	/* testimonials modal */
+	/* references modal */
 
-	.testimonials-modal {
+	.references-modal {
 		gap: 35px;
 		max-width: 680px;
 	}
@@ -1806,9 +1831,9 @@ textarea.form-input::-webkit-resizer {
 		gap: 20px 25px;
 	}
 
-	/* testimonials */
+	/* references */
 
-	.testimonials-item {
+	.references-item {
 		min-width: calc(50% - 15px);
 	}
 
