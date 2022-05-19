@@ -16,7 +16,8 @@ sidebarBtn.addEventListener("click", function () {
 const referencesItem = document.querySelectorAll("[data-references-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
+// Const overlay = document.querySelector("[data-overlay]");
+const overlay = document.querySelector("data-overlay");
 
 // Modal variable
 const modalImg = document.querySelector("[data-modal-img]");
@@ -134,4 +135,13 @@ for (let i = 0; i < navigationLinks.length; i++) {
 			}
 		}
 	});
+}
+
+function closeModalPopUp() {
+	// Const overlay = document.querySelector("data-overlay");
+	// Const modal = document.querySelector("references-modal");
+	// Overlay.setAttribute("style", "display:none");
+	// Modal.setAttribute("style", "display:none");
+
+	document.getElementById("popUpModal").setAttribute("style", "display:none");
 }
