@@ -746,10 +746,12 @@
 
 						<!-- References Modal -->
 						<div class="modal-container" data-modal-container>
-							<div class="overlay" data-overlay></div>
+							<!-- <div class="overlay" data-overlay></div> -->
+							<div class="overlay"></div>
 
-							<section class="references-modal">
-								<button class="modal-close-btn" data-modal-close-btn>
+							<section class="references-modal" id="popUpModal">
+								<!-- <button class="modal-close-btn" data-modal-close-btn> -->
+								<button class="modal-close-btn" onclick="closeModalPopUp()">
 									<ion-icon name="close-outline"></ion-icon>
 								</button>
 

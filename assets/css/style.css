@@ -416,7 +416,7 @@ article.active {
 
 .social-list {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	gap: 15px;
 	padding-bottom: 4px;
@@ -788,7 +788,7 @@ a:active {
 	margin: 0 -15px;
 	padding: 25px;
 	padding-bottom: 25px;
-	overflow-x: auto;
+	overflow-x: scroll;
 	scroll-behavior: smooth;
 	overscroll-behavior-inline: contain;
 	scroll-snap-type: inline mandatory;
@@ -1646,6 +1646,7 @@ textarea.form-input::-webkit-resizer {
 		margin: 0 -30px;
 		padding: 45px;
 		scroll-padding-inline: 45px;
+		overflow-x: scroll;
 	}
 
 	.clients-item {
