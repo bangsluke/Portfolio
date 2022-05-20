@@ -81,7 +81,7 @@ html {
 
 body {
 	background-color: #000;
-	background-image: url("//assets/images/Background.jpg");
+	/* background-image: url("//assets/images/Background.jpg"); */
 	background-size: cover;
 	background-position: top center;
 }
@@ -312,7 +312,7 @@ article.active {
 .info-content .title {
 	color: var(--white-1);
 	background: var(--onyx);
-	font-size: var(--fs-8);
+	font-size: var(--fs-10);
 	font-weight: var(--fw-300);
 	width: max-content;
 	padding: 3px 12px;
@@ -1088,6 +1088,37 @@ a:active {
 	/* background-color: darkcyan; */
 	color: white;
 	font-size: small;
+}
+
+/* Wrap the skill section for mobile displays. */
+@media (max-width: 580px) {
+	.skill .title-wrapper {
+		/* background-color: red; */
+		display: grid;
+		column-gap: 2px;
+		row-gap: 5px;
+		grid-template-columns: 1fr 4fr;
+		grid-template-rows: max-content max-content;
+		grid-template-areas:
+			"SkillIcon   SkillName   SkillName"
+			"SkillDescription   SkillDescription   SkillDescription";
+	}
+
+	.skill-image {
+		/* background-color: blue; */
+		grid-area: SkillIcon;
+	}
+
+	.skill-name {
+		/* background-color: yellow; */
+		grid-area: SkillName;
+		width: 100%;
+	}
+
+	.skill-description {
+		/* background-color: orange; */
+		grid-area: SkillDescription;
+	}
 }
 
 .skill-progress-bg {
