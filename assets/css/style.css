@@ -46,6 +46,7 @@
 	--fs-5: 15px;
 	--fs-6: 14px;
 	--fs-7: 13px;
+	--fs-75: 12px;
 	--fs-8: 11px;
 
 	/* Font-weight */
@@ -64,6 +65,7 @@
 	/* Transitions */
 	--transition-1: 0.25s ease;
 	--transition-2: 0.5s ease-in-out;
+	--transition-3: 2s ease-in-out 0s;
 }
 
 /* Reset */
@@ -312,7 +314,7 @@ article.active {
 .info-content .title {
 	color: var(--white-1);
 	background: var(--onyx);
-	font-size: var(--fs-10);
+	font-size: var(--fs-75);
 	font-weight: var(--fw-300);
 	width: max-content;
 	padding: 3px 12px;
@@ -895,72 +897,8 @@ a:active {
 	position: relative;
 }
 
-/* Format the experience text sections to have a fade out effect and allow the user to read more if needed. */
-/* .experience-item:before {
-	content: "";
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background: linear-gradient(transparent 50px, var(--eerie-black-2));
-} */
-
-/* .experience-item {
-	max-height: 145px;
-	overflow: hidden;
-	background: linear-gradient(transparent 80px, var(--eerie-black-2));
-	transition: all 0.5s linear;
-} */
-
-.experience-item {
-	max-height: 145px;
-	overflow: hidden;
-	transition: all 1s;
-}
-
-.experience-item:hover {
-	max-height: 250px;
-	transition: all 1s;
-}
-
-/* .experience-item:hover {
-	transform: scaleY(2);
-} */
-
-/* .experience-item:hover {
-	animation-name: showalltext;
-	animation-duration: 3s;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: forwards;
-	transition: all 1s;
-} */
-
-/* Add an animation to expand and show the full text. */
-/* @keyframes showalltext {
-	0% {
-		max-height: 145px;
-	}
-	100% {
-		max-height: max-content;
-		background: none;
-	}
-} */
-
 .timeline-item:not(:last-child) {
 	margin-bottom: 20px;
-}
-
-.timeline-item-title {
-	font-size: var(--fs-6);
-	line-height: 1.3;
-	margin-bottom: 7px;
-}
-
-.timeline-list span {
-	color: var(--vegas-gold);
-	font-weight: var(--fw-400);
-	line-height: 1.6;
 }
 
 .timeline-item:not(:last-child)::before {
@@ -1003,6 +941,48 @@ a:active {
 	}
 }
 
+/* Format the experience text sections to have a fade out effect and allow the user to read more if needed. */
+.timeline-item-container {
+	max-height: 145px;
+	overflow: hidden;
+	transition: var(--transition-3);
+}
+/* Add a fade out effect over the text. https://stackoverflow.com/a/22809380/14290169 */
+.timeline-item-container:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: linear-gradient(transparent 100px, var(--eerie-black-2));
+}
+/* Add a hover effect that expands the container to full size. */
+.timeline-item-container:hover {
+	height: max-content;
+	max-height: 1000px;
+	transition: var(--transition-3);
+}
+.timeline-item-container:hover:before {
+	content: none;
+	/* background: linear-gradient(transparent 1000px, var(--eerie-black-2)); */
+}
+
+/* Format the headline of each block. */
+.timeline-item-title {
+	font-size: var(--fs-6);
+	line-height: 1.3;
+	margin-bottom: 7px;
+}
+
+/* Format the date timeline text. */
+.timeline-list span {
+	color: var(--vegas-gold);
+	font-weight: var(--fw-400);
+	line-height: 1.6;
+}
+
+/* Format the blocks of text descriptions. */
 .timeline-text {
 	color: var(--light-gray);
 	font-weight: var(--fw-300);

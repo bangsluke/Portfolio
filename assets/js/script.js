@@ -46,6 +46,8 @@ for (let i = 0; i < referencesItem.length; i++) {
 // ModalCloseBtn.addEventListener("click", referencesModalFunc);
 // Overlay.addEventListener("click", referencesModalFunc);
 
+// Portfolio Functions
+
 // Custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
@@ -56,20 +58,42 @@ select.addEventListener("click", function () {
 	elementToggleFunc(this);
 });
 
+// Mobile Filtering Function
 // Add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
 	selectItems[i].addEventListener("click", function () {
-		let selectedValue = this.innerText.toLowerCase();
+		let selectedValue = this.innerText;
 		selectValue.innerText = this.innerText;
 		elementToggleFunc(select);
+		console.log(i + " " + selectedValue + " - Mobile");
 		filterFunc(selectedValue);
 	});
 }
 
-// Filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
+// Desktop Filtering Function
+// Add event in all filter button items for large screen
+let lastClickedBtn = filterBtn[0];
+for (let i = 0; i < filterBtn.length; i++) {
+	filterBtn[i].addEventListener("click", function () {
+		let selectedValue = this.innerText;
+		selectValue.innerText = this.innerText;
+		console.log(i + " " + selectedValue + " - Desktop");
+		filterFunc(selectedValue);
 
+		lastClickedBtn.classList.remove("active");
+		this.classList.add("active");
+		lastClickedBtn = this;
+	});
+}
+
+// Filter Variables and Function for Desktop and Mobile
+
+// Filter variables
+const filterItems = document.querySelectorAll("[data-filter-item]"); // Items to be filtered
+
+// Function to filter the items by adding and removing active
 const filterFunc = function (selectedValue) {
+	console.log("Filtering items");
 	for (let i = 0; i < filterItems.length; i++) {
 		if (selectedValue === "All") {
 			filterItems[i].classList.add("active");
@@ -81,20 +105,7 @@ const filterFunc = function (selectedValue) {
 	}
 };
 
-// Add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
-
-for (let i = 0; i < filterBtn.length; i++) {
-	filterBtn[i].addEventListener("click", function () {
-		let selectedValue = this.innerText;
-		selectValue.innerText = this.innerText;
-		filterFunc(selectedValue);
-
-		lastClickedBtn.classList.remove("active");
-		this.classList.add("active");
-		lastClickedBtn = this;
-	});
-}
+// Contact Tab Functions
 
 // Contact form variables
 const form = document.querySelector("[data-form]");
