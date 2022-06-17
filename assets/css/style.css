@@ -408,7 +408,7 @@ article.active {
 }
 
 .contact-info :is(.contact-link, time, address) {
-	color: var(--white-2);
+	color: var(--white-2, white);
 	font-size: var(--fs-7);
 }
 
@@ -549,22 +549,27 @@ article.active {
 
 /* unvisited link */
 a:link {
-	color: red;
+	/* color: red; */
+	color: var(--orange-yellow-crayola, orange);
 }
 
 /* visited link */
 a:visited {
-	color: green;
+	/* color: green; */
+	color: var(--orange-yellow-crayola, orange);
+	font-weight: bolder;
 }
 
 /* mouse over link */
 a:hover {
-	color: hotpink;
+	/* color: hotpink; */
+	color: white;
 }
 
 /* selected link */
 a:active {
-	color: blue;
+	/* color: blue; */
+	color: white;
 }
 
 /* Service Section (What I'm Doing) */
@@ -1196,7 +1201,6 @@ a:active {
 	display: block;
 	animation: scaleUp 0.25s ease forwards;
 }
-
 @keyframes scaleUp {
 	0% {
 		transform: scale(0.5);
@@ -1207,6 +1211,10 @@ a:active {
 }
 
 .project-item > a {
+	width: 100%;
+}
+
+.project-item > project-img {
 	width: 100%;
 }
 
@@ -1235,11 +1243,17 @@ a:active {
 	background: hsla(0, 0%, 0%, 0.5);
 }
 
+/* Add a slightly darker overaly to the images on hover. */
+.project-item:hover > .project-img::before {
+	background: hsla(0, 0%, 0%, 0.5);
+}
+
+/* Style the little pop up box that appears over each portfolio item, holding the icons. */
 .project-item-icon-box {
 	--scale: 0.8;
 
 	background: var(--jet);
-	color: var(--orange-yellow-crayola);
+	color: var(--orange-yellow-crayola, orange);
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -1257,7 +1271,25 @@ a:active {
 	opacity: 1;
 }
 
+/* Make the smaller icon box appear when on hover. */
+.project-img:hover > .project-item-icon-box {
+	--scale: 1;
+	opacity: 1;
+}
+
+.project-item-icon-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: space-between;
+}
+
 .project-item-icon-box ion-icon {
+	padding: 5px;
+	--ionicon-stroke-width: 50px;
+}
+
+.project-item-icon-box a > ion-icon {
 	--ionicon-stroke-width: 50px;
 }
 
@@ -1269,6 +1301,11 @@ a:active {
 }
 
 .project-item > a:hover img {
+	transform: scale(1.1);
+}
+
+/* Make the image slightly grow on hover over. */
+.project-item:hover > figure > img {
 	transform: scale(1.1);
 }
 
