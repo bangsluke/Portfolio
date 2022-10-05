@@ -36,7 +36,7 @@
   grid-gap: 20px;
   grid-template-columns: 28% 1fr;
   grid-template-rows: auto auto 50px;
-  grid-template-areas: "sidebar header" "sidebar content" "sidebar footer";
+  grid-template-areas: "sidebar header""sidebar content""sidebar footer";
 }
 
 /*When screen size is less than 500px, change the layout of the container.*/
@@ -48,7 +48,7 @@
     /* background: blue; */
     grid-template-columns: 1fr;
     grid-template-rows: 50px auto 1fr 50px;
-    grid-template-areas: "header" "sidebar" "content" "footer";
+    grid-template-areas: "header""sidebar""content""footer";
   }
 }
 
@@ -66,7 +66,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
-  grid-template-areas: "header-logo-section" "header-line-break-section" "header-name-section";
+  grid-template-areas: "header-logo-section""header-line-break-section""header-name-section";
 }
 
 .header-logo-section {

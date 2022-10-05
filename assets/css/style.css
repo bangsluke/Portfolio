@@ -113,7 +113,7 @@ span {
 	display: block;
 }
 
-/* Style all buttons throughtout the page. */
+/* Style all buttons throughout the page. */
 button {
 	font: inherit;
 	background: none;
@@ -144,6 +144,7 @@ textarea {
 /* Top Level Styling Media Queries */
 
 @media (min-width: 580px) {
+
 	/* Responsive larger than 580px screen */
 	:root {
 		/* Typography */
@@ -176,12 +177,15 @@ textarea {
 .h2 {
 	font-size: var(--fs-1);
 }
+
 .h3 {
 	font-size: var(--fs-2);
 }
+
 .h4 {
 	font-size: var(--fs-4);
 }
+
 .h5 {
 	font-size: var(--fs-7);
 	font-weight: var(--fw-500);
@@ -244,6 +248,7 @@ article.active {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -252,6 +257,7 @@ article.active {
 /* Article Styling Media Queries */
 
 @media (min-width: 580px) {
+
 	/* Responsive larger than 580px screen */
 	.sidebar,
 	article {
@@ -259,10 +265,12 @@ article.active {
 		margin-inline: auto;
 		padding: 30px;
 	}
+
 	.article-title {
 		font-weight: var(--fw-600);
 		padding-bottom: 15px;
 	}
+
 	.article-title::after {
 		width: 40px;
 		height: 5px;
@@ -299,6 +307,7 @@ article.active {
 	border: solid 1px rgba(255, 255, 255, 0.25);
 	background-color: rgba(255, 255, 255, 0.075);
 }
+
 #profilePicture:hover {
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 var(--orange-yellow-crayola, #fff);
 }
@@ -320,6 +329,7 @@ article.active {
 	padding: 3px 12px;
 	border-radius: 8px;
 }
+
 .info-content .title:hover {
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 var(--orange-yellow-crayola, #fff);
 }
@@ -449,6 +459,7 @@ article.active {
 	box-shadow: var(--shadow-1);
 	z-index: 1;
 }
+
 .icon-box::before {
 	content: "";
 	position: absolute;
@@ -457,6 +468,7 @@ article.active {
 	border-radius: inherit;
 	z-index: -1;
 }
+
 .icon-box:hover {
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 var(--orange-yellow-crayola, #fff);
 }
@@ -467,6 +479,7 @@ article.active {
 }
 
 @media (min-width: 580px) {
+
 	/* Responsive larger than 580px screen */
 	.icon-box {
 		width: 48px;
@@ -491,6 +504,7 @@ article.active {
 	box-shadow: var(--shadow-2);
 	z-index: 5;
 }
+
 .navbar-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -498,16 +512,19 @@ article.active {
 	align-items: center;
 	padding: 0 10px;
 }
+
 .navbar-link {
 	color: var(--light-gray);
 	font-size: var(--fs-8);
 	padding: 20px 7px;
 	transition: color var(--transition-1);
 }
+
 .navbar-link:hover,
 .navbar-link:focus {
 	color: var(--white-1, #fff);
 }
+
 .navbar-link.active {
 	color: var(--orange-yellow-crayola);
 }
@@ -527,7 +544,7 @@ article.active {
 }
 
 /* Style the text on the about article. */
-.about-text-section > p {
+.about-text-section>p {
 	/* background-color: blue; */
 	color: var(--light-gray);
 	font-size: var(--fs-6);
@@ -538,7 +555,7 @@ article.active {
 }
 
 /* Format the link text in each body of text within the site. */
-.about-text-section > p > a {
+.about-text-section>p>a {
 	/* background-color: green; */
 	font-size: var(--fs-6);
 	font-weight: bold;
@@ -577,14 +594,17 @@ a:active {
 .service {
 	margin-bottom: 35px;
 }
+
 .service-title {
 	margin-bottom: 20px;
 }
+
 .service-list {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 20px;
 }
+
 .service-item {
 	position: relative;
 	background: var(--border-gradient-onyx);
@@ -593,6 +613,7 @@ a:active {
 	box-shadow: var(--shadow-2);
 	z-index: 1;
 }
+
 .service-item::before {
 	content: "";
 	position: absolute;
@@ -601,21 +622,27 @@ a:active {
 	border-radius: inherit;
 	z-index: -1;
 }
+
 .service-item:hover {
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 var(--orange-yellow-crayola, #fff);
 }
+
 .service-icon-box {
 	margin-bottom: 10px;
 }
+
 .service-icon-box img {
 	margin: auto;
 }
+
 .service-content-box {
 	text-align: center;
 }
+
 .service-item-title {
 	margin-bottom: 7px;
 }
+
 .service-item-text {
 	color: var(--light-gray);
 	font-size: var(--fs-6);
@@ -628,9 +655,11 @@ a:active {
 .references {
 	margin-bottom: 30px;
 }
+
 .references-title {
 	margin-bottom: 20px;
 }
+
 .references-list {
 	display: flex;
 	justify-content: flex-start;
@@ -644,10 +673,12 @@ a:active {
 	overscroll-behavior-inline: contain;
 	scroll-snap-type: inline mandatory;
 }
+
 .references-item {
 	min-width: 100%;
 	scroll-snap-align: center;
 }
+
 .references-avatar-box {
 	position: absolute;
 	top: 0;
@@ -657,9 +688,11 @@ a:active {
 	border-radius: 14px;
 	box-shadow: var(--shadow-1);
 }
+
 .references-item-title {
 	margin-bottom: 7px;
 }
+
 .references-text {
 	color: var(--light-gray);
 	font-size: var(--fs-6);
@@ -689,13 +722,16 @@ a:active {
 	pointer-events: none;
 	visibility: hidden;
 }
+
 .modal-container::-webkit-scrollbar {
 	display: none;
 }
+
 .modal-container.active {
 	pointer-events: all;
 	visibility: visible;
 }
+
 .overlay {
 	position: fixed;
 	top: 0;
@@ -709,11 +745,13 @@ a:active {
 	z-index: 1;
 	transition: var(--transition-1);
 }
+
 .overlay.active {
 	opacity: 0.8;
 	visibility: visible;
 	pointer-events: all;
 }
+
 .references-modal {
 	background: var(--eerie-black-2);
 	position: relative;
@@ -727,10 +765,12 @@ a:active {
 	transition: var(--transition-1);
 	z-index: 2;
 }
+
 .modal-container.active .references-modal {
 	transform: scale(1);
 	opacity: 1;
 }
+
 .modal-close-btn {
 	position: absolute;
 	top: 15px;
@@ -746,13 +786,16 @@ a:active {
 	font-size: 18px;
 	opacity: 0.7;
 }
+
 .modal-close-btn:hover,
 .modal-close-btn:focus {
 	opacity: 1;
 }
+
 .modal-close-btn ion-icon {
 	--ionicon-stroke-width: 50px;
 }
+
 .modal-avatar-box {
 	background: var(--bg-gradient-onyx);
 	width: max-content;
@@ -760,18 +803,22 @@ a:active {
 	margin-bottom: 15px;
 	box-shadow: var(--shadow-2);
 }
-.modal-img-wrapper > img {
+
+.modal-img-wrapper>img {
 	display: none;
 }
+
 .modal-title {
 	margin-bottom: 4px;
 }
+
 .modal-content time {
 	font-size: var(--fs-6);
 	color: var(--light-gray-70);
 	font-weight: var(--fw-300);
 	margin-bottom: 10px;
 }
+
 .modal-content p {
 	color: var(--light-gray);
 	font-size: var(--fs-6);
@@ -809,6 +856,7 @@ a:active {
 	scroll-snap-align: start;
 	margin: 20px;
 }
+
 .clients-item img {
 	height: 150px;
 	width: auto;
@@ -817,23 +865,29 @@ a:active {
 	transition: var(--transition-1);
 	padding: 10px;
 }
+
 .clients-item img:hover {
 	filter: grayscale(0);
 }
 
 /* Format the scrollbar in the Clients section. */
 .has-scrollbar::-webkit-scrollbar {
-	width: 5px; /* for vertical scrollbar */
-	height: 5px; /* for horizontal scrollbar */
+	width: 5px;
+	/* for vertical scrollbar */
+	height: 5px;
+	/* for horizontal scrollbar */
 }
+
 .has-scrollbar::-webkit-scrollbar-track {
 	background: var(--onyx);
 	border-radius: 5px;
 }
+
 .has-scrollbar::-webkit-scrollbar-thumb {
 	background: var(--orange-yellow-crayola);
 	border-radius: 5px;
 }
+
 .has-scrollbar::-webkit-scrollbar-button {
 	width: 20px;
 }
@@ -841,6 +895,7 @@ a:active {
 /* About Article Media Queries */
 
 @media (min-width: 450px) {
+
 	/* Responsive larger than 450px screen */
 	.clients-item {
 		min-width: calc(33.33% - 10px);
@@ -862,6 +917,7 @@ a:active {
 	cursor: pointer;
 	z-index: 1;
 }
+
 .content-card::before {
 	content: "";
 	position: absolute;
@@ -870,6 +926,7 @@ a:active {
 	border-radius: inherit;
 	z-index: -1;
 }
+
 .content-card:hover {
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 var(--orange-yellow-crayola, #fff);
 }
@@ -938,9 +995,11 @@ a:active {
 	0% {
 		box-shadow: 0 0 0 0px var(--jet);
 	}
+
 	50% {
 		box-shadow: 0 0 0 4px var(--jet);
 	}
+
 	100% {
 		box-shadow: 0 0 0 0px var(--jet);
 	}
@@ -952,6 +1011,7 @@ a:active {
 	overflow: hidden;
 	transition: var(--transition-3);
 }
+
 /* Add a fade out effect over the text. https://stackoverflow.com/a/22809380/14290169 */
 .timeline-item-container:before {
 	content: "";
@@ -962,12 +1022,14 @@ a:active {
 	top: 0;
 	background: linear-gradient(transparent 100px, var(--eerie-black-2));
 }
+
 /* Add a hover effect that expands the container to full size. */
 .timeline-item-container:hover {
 	height: max-content;
 	max-height: 1000px;
 	transition: var(--transition-3);
 }
+
 .timeline-item-container:hover:before {
 	content: none;
 	/* background: linear-gradient(transparent 1000px, var(--eerie-black-2)); */
@@ -996,7 +1058,7 @@ a:active {
 }
 
 /* Style the key achievement text. */
-.timeline-text-achievement > p {
+.timeline-text-achievement>p {
 	/* background-color: blue; */
 	color: var(--light-gray);
 	font-size: var(--fs-6);
@@ -1006,7 +1068,7 @@ a:active {
 }
 
 /* Format the link text in each body of text within the site. */
-.timeline-text > a {
+.timeline-text>a {
 	/* background-color: green; */
 	font-size: var(--fs-6);
 	font-weight: bold;
@@ -1018,12 +1080,14 @@ a:active {
 /* My Skills Section */
 
 .skills-title {
-	margin-bottom: 20px; /* Add some space below the header. */
+	margin-bottom: 20px;
+	/* Add some space below the header. */
 }
 
 .skills-list {
 	padding: 20px;
 }
+
 .skills-list:hover {
 	box-shadow: none;
 }
@@ -1127,10 +1191,12 @@ a:active {
 .filter-list {
 	display: none;
 }
+
 .filter-select-box {
 	position: relative;
 	margin-bottom: 25px;
 }
+
 .filter-select {
 	background: var(--eerie-black-2);
 	color: var(--light-gray);
@@ -1144,6 +1210,7 @@ a:active {
 	font-size: var(--fs-6);
 	font-weight: var(--fw-300);
 }
+
 .filter-select.active .select-icon {
 	transform: rotate(0.5turn);
 }
@@ -1163,7 +1230,7 @@ a:active {
 	transition: 0.15s ease-in-out;
 }
 
-.filter-select.active + .select-list {
+.filter-select.active+.select-list {
 	opacity: 1;
 	visibility: visible;
 	pointer-events: all;
@@ -1201,20 +1268,22 @@ a:active {
 	display: block;
 	animation: scaleUp 0.25s ease forwards;
 }
+
 @keyframes scaleUp {
 	0% {
 		transform: scale(0.5);
 	}
+
 	100% {
 		transform: scale(1);
 	}
 }
 
-.project-item > a {
+.project-item>a {
 	width: 100%;
 }
 
-.project-item > project-img {
+.project-item>project-img {
 	width: 100%;
 }
 
@@ -1239,12 +1308,12 @@ a:active {
 	transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before {
+.project-item>a:hover .project-img::before {
 	background: hsla(0, 0%, 0%, 0.5);
 }
 
-/* Add a slightly darker overaly to the images on hover. */
-.project-item:hover > .project-img::before {
+/* Add a slightly darker overlay to the images on hover. */
+.project-item:hover>.project-img::before {
 	background: hsla(0, 0%, 0%, 0.5);
 }
 
@@ -1266,13 +1335,13 @@ a:active {
 	transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-item-icon-box {
+.project-item>a:hover .project-item-icon-box {
 	--scale: 1;
 	opacity: 1;
 }
 
 /* Make the smaller icon box appear when on hover. */
-.project-img:hover > .project-item-icon-box {
+.project-img:hover>.project-item-icon-box {
 	--scale: 1;
 	opacity: 1;
 }
@@ -1289,7 +1358,7 @@ a:active {
 	--ionicon-stroke-width: 50px;
 }
 
-.project-item-icon-box a > ion-icon {
+.project-item-icon-box a>ion-icon {
 	--ionicon-stroke-width: 50px;
 }
 
@@ -1300,12 +1369,12 @@ a:active {
 	transition: var(--transition-1);
 }
 
-.project-item > a:hover img {
+.project-item>a:hover img {
 	transform: scale(1.1);
 }
 
 /* Make the image slightly grow on hover over. */
-.project-item:hover > figure > img {
+.project-item:hover>figure>img {
 	transform: scale(1.1);
 }
 
@@ -1331,6 +1400,7 @@ a:active {
 /* Portfolio Article Media Queries */
 
 @media (min-width: 450px) {
+
 	/* Responsive larger than 450px screen */
 	.project-img {
 		height: auto;
@@ -1379,7 +1449,7 @@ a:active {
 }
 
 /* Style the text on the contact article. */
-.contact-me-section > p {
+.contact-me-section>p {
 	/* background-color: blue; */
 	color: var(--light-gray);
 	font-size: var(--fs-6);
@@ -1390,7 +1460,7 @@ a:active {
 }
 
 /* Format the link text in each body of text within the site. */
-.contact-me-section > p > a {
+.contact-me-section>p>a {
 	/* background-color: green; */
 	font-size: var(--fs-6);
 	font-weight: bold;
@@ -1681,7 +1751,7 @@ textarea.form-input::-webkit-resizer {
 		width: 65px;
 	}
 
-	.modal-img-wrapper > img {
+	.modal-img-wrapper>img {
 		display: block;
 		flex-grow: 1;
 		width: 35px;
@@ -1894,6 +1964,7 @@ textarea.form-input::-webkit-resizer {
 	.sidebar,
 	article {
 		width: 950px;
+		min-width: 300px;
 		box-shadow: var(--shadow-5);
 	}
 
@@ -2003,11 +2074,6 @@ textarea.form-input::-webkit-resizer {
 	/**
    * REUSED STYLE
    */
-
-	.sidebar,
-	article {
-		width: auto;
-	}
 
 	article {
 		min-height: 100%;

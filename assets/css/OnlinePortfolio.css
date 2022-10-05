@@ -142,6 +142,7 @@ a:active {
     0% {
         color: white;
     }
+
     100% {}
 }
 
@@ -222,7 +223,7 @@ p:hover {
     width: 100%;
     display: grid;
     grid-template-columns: 70% 30%;
-    /* grid-template-rows: repeat(3, 1fr); is another alterantive for the code below*/
+    /* grid-template-rows: repeat(3, 1fr); is another alternative for the code below*/
     grid-template-rows: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
@@ -258,7 +259,7 @@ p:hover {
     /*Outer box*/
     border: 0px solid #1c8841;
     padding: 0px 100px 0px 100px;
-    width: inhert;
+    width: inherit;
     height: 90%;
     /*Styling*/
     background-color: white;
@@ -504,23 +505,23 @@ button:hover {
 /* Change the background colour of when a user highlights text to orange. */
 
 h1::selection {
-	background: var(--accent-color-orange, orange);
+    background: var(--accent-color-orange, orange);
 }
 
 strong::selection {
-	background: var(--accent-color-orange, orange);
+    background: var(--accent-color-orange, orange);
 }
 
 a::selection {
-	background: var(--accent-color-orange, orange);
+    background: var(--accent-color-orange, orange);
 }
 
 p::selection {
-	background: var(--accent-color-orange, orange);
+    background: var(--accent-color-orange, orange);
 }
 
 /* Smooth the scrolling function of any internal hyperlinks. */
 
-html{
-	scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
