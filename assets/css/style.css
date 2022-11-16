@@ -444,6 +444,10 @@ article.active {
 	color: var(--orange-yellow-crayola, #fff);
 }
 
+.social-link>img:hover {
+	color: var(--orange-yellow-crayola, #fff);
+}
+
 /* Style the small boxes holding the icons. */
 .icon-box {
 	position: relative;
@@ -1600,7 +1604,8 @@ textarea.form-input::-webkit-resizer {
 	}
 
 	.avatar-box img {
-		width: 120px;
+		width: 150px;
+		height: 150px;
 	}
 
 	.info-content .name {
@@ -2116,6 +2121,7 @@ textarea.form-input::-webkit-resizer {
 
 	.avatar-box img {
 		width: 150px;
+		height: 150px;
 	}
 
 	.info-content .name {
