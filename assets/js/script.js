@@ -147,12 +147,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
 		}
 	});
 }
-
-function closeModalPopUp() {
-	// Const overlay = document.querySelector("data-overlay");
-	// Const modal = document.querySelector("references-modal");
-	// Overlay.setAttribute("style", "display:none");
-	// Modal.setAttribute("style", "display:none");
-
-	document.getElementById("popUpModal").setAttribute("style", "display:none");
-}
