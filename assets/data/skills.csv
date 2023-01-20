@@ -1,0 +1,19 @@
+id,name,value,description,image_path
+HTML,HTML,80,Understanding of how to structure and build sites using HTML5 and use semantic tags for the correct purposes,assets/images/logos/HTML.png
+CSS,CSS,75,A good understanding of styling web pages through CSS and using minimal selectors,assets/images/logos/CSS.png
+JavaScript,JavaScript,75,A good understanding of JavaScript concepts to build dynamic pages that respond to user requests and how best to structure large scale JavaScript projects,assets/images/logos/JavaScript.png
+React,React,70,"Able to create more advanced React applications with wide functionality and scalability, utilising hooks and refactoring components down to useable functions",assets/images/logos/React.png
+Next.JS,Next.JS,60,"Used Next.JS for multiple projects, utilising it's features to create dynamic and rapid applications",assets/images/logos/NextJS.png
+TypeScript,TypeScript,50,"An reasonable understanding and application of TypeScript, with a couple of larger projects built using it",assets/images/logos/TypeScript.png
+SASS,SASS,10,Able to read and understand Sass instead of CSS but yet to begin regularly using it,assets/images/logos/SASS.png
+MySQL,MySQL,50,Built and maintained a relatively complex SQL database using MySQL writing schema modification statements,assets/images/logos/MySQL.png
+Neo4j,Neo4j,40,Able to read Cypher query language and write basic queries to return data via graph connections as well as create and maintain graphs from the CLI,assets/images/logos/Neo4j.png
+GraphQL,GraphQL,35,Set up a project using GraphQL queries and mutations to interact with a Neo4j graph,assets/images/logos/GraphQL.png
+Node.JS,Node.JS,15,A very basic understanding of the concept of using Node.JS as a backend having used it one one large application,assets/images/logos/NodeJS.png
+Nest.JS,Nest.JS,5,A very basic understanding of the concept of Nest.JS as a Node framework,assets/images/logos/NestJS.png
+Figma,Figma,30,"Able to create basic designs, utilising components to build up complex designs",assets/images/logos/Figma.png
+Postman,Postman,25,Used on a couple of projects to verify the APIs I created for passing data from the backend to the frontend,assets/images/logos/Postman.png
+Storybook,Storybook,5,An understanding of the concept of Storybook with a few React components built within it,assets/images/logos/Storybook.png
+Visual Basic Application,Visual Basic Application,75,Able to create detailed tools within Excel and write advanced macros for large scale automation,assets/images/logos/VBA.png
+Java,Java,30,Capable of writing basic Java functions and able to review and correct more complex code,assets/images/logos/Java.png
+Power Apps,Power Apps,20,TBC,assets/images/logos/PowerApps.png
