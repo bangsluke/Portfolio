@@ -1,0 +1,19 @@
+id,name,fullName,value,description,category,imagePath
+HTML,HTML,HTML,80,Understanding of how to structure and build sites using HTML5 and use semantic tags for the correct purposes,Frontend,assets/images/logos/HTML.png
+CSS,CSS,CSS,75,A good understanding of styling web pages through CSS and using minimal selectors,Frontend,assets/images/logos/CSS.png
+JavaScript,JavaScript,JavaScript,75,A good understanding of JavaScript concepts to build dynamic pages that respond to user requests and how best to structure large scale JavaScript projects,Frontend,assets/images/logos/JavaScript.png
+React,React,React,70,"Able to create more advanced React applications with wide functionality and scalability, utilising hooks and refactoring components down to useable functions",Frontend,assets/images/logos/React.png
+Next.JS,Next.JS,Next.JS,60,"Used Next.JS for multiple projects, utilising it's features to create dynamic and rapid applications",Frontend,assets/images/logos/NextJS.png
+TypeScript,TypeScript,TypeScript,50,"An reasonable understanding and application of TypeScript, with a couple of larger projects built using it",Frontend,assets/images/logos/TypeScript.png
+SASS,SASS,SASS,10,Able to read and understand Sass instead of CSS but yet to begin regularly using it,Frontend,assets/images/logos/SASS.png
+MySQL,MySQL,MySQL,50,Built and maintained a relatively complex SQL database using MySQL writing schema modification statements,Backend,assets/images/logos/MySQL.png
+Neo4j,Neo4j,Neo4j,40,Able to read Cypher query language and write basic queries to return data via graph connections as well as create and maintain graphs from the CLI,Backend,assets/images/logos/Neo4j.png
+GraphQL,GraphQL,GraphQL,35,Set up a project using GraphQL queries and mutations to interact with a Neo4j graph,Backend,assets/images/logos/GraphQL.png
+Node.JS,Node.JS,Node.JS,15,A very basic understanding of the concept of using Node.JS as a backend having used it one one large application,Backend,assets/images/logos/NodeJS.png
+Nest.JS,Nest.JS,Nest.JS,5,A very basic understanding of the concept of Nest.JS as a Node framework,Backend,assets/images/logos/NestJS.png
+Figma,Figma,Figma,30,"Able to create basic designs, utilising components to build up complex designs",Resources,assets/images/logos/Figma.png
+Postman,Postman,Postman,25,Used on a couple of projects to verify the APIs I created for passing data from the backend to the frontend,Resources,assets/images/logos/Postman.png
+Storybook,Storybook,Storybook,5,An understanding of the concept of Storybook with a few React components built within it,Resources,assets/images/logos/Storybook.png
+VBA,VBA,Visual Basic Application,75,Able to create detailed tools within Excel and write advanced macros for large scale automation,OtherLanguages,assets/images/logos/VBA.png
+Java,Java,Java,30,Capable of writing basic Java functions and able to review and correct more complex code,OtherLanguages,assets/images/logos/Java.png
+PowerApps,Power Apps,Power Apps,20,Test,OtherLanguages,assets/images/logos/PowerApps.png
