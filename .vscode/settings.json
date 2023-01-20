@@ -3,12 +3,14 @@
 		"Auchecorne",
 		"Taryn",
 		"bodytext",
+		"datapoint",
 		"fullname",
 		"ionicon",
 		"ionicons",
 		"mainpage",
 		"mapbox",
-		"pagebreak"
+		"pagebreak",
+		"xlink"
 	],
-	"cSpell.words": ["Ashcombe", "DFMEA's", "GCSEs", "Girish", "Kloss", "Pillutla", "Waymo"]
+	"cSpell.words": ["Ashcombe", "datapoints", "DFMEA's", "GCSEs", "Girish", "Kloss", "Pillutla", "Waymo"]
 }

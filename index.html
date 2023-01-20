@@ -13,6 +13,13 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+		<style>
+			svg {
+				background: #f1f1f1;
+				background: none;
+			}
+		</style>
 	</head>
 	<body>
 		<main>
@@ -226,11 +233,14 @@
 					<section class="skill">
 						<h3 class="h3 skills-title">My skills</h3>
 
+						<!-- Add a div to hold the D3 bubble chart -->
+						<div id="chart"></div>
+
 						<ul class="skills-list content-card">
 							<!-- HTML -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/HTML Logo.png" alt="HTML Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/HTML.png" alt="HTML Logo" width="40" />
 									<h5 class="h5 skill-name">HTML</h5>
 									<p class="skill-description">
 										Understanding of how to structure and build sites using HTML5 and use semantic tags for the correct
@@ -246,7 +256,7 @@
 							<!-- CSS -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/CSS Logo.png" alt="CSS Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/CSS.png" alt="CSS Logo" width="40" />
 									<h5 class="h5 skill-name">CSS</h5>
 									<p class="skill-description">
 										A good understanding of styling web pages through CSS and using minimal selectors
@@ -261,7 +271,7 @@
 							<!-- JavaScript -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/JavaScript Logo.png" alt="JavaScript Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/JavaScript.png" alt="JavaScript Logo" width="40" />
 									<h5 class="h5 skill-name">JavaScript</h5>
 									<p class="skill-description">
 										A good understanding of JavaScript concepts to build dynamic pages that respond to user requests and
@@ -279,7 +289,7 @@
 								<div class="title-wrapper">
 									<img
 										class="skill-image"
-										src="assets/images/Visual Basic Application Logo.png"
+										src="assets/images/logos/VBA.png"
 										alt="Visual Basic Application Logo"
 										width="40" />
 									<h5 class="h5 skill-name">Visual Basic Application</h5>
@@ -297,7 +307,7 @@
 							<!-- React -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/React Logo.png" alt="React Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/React.png" alt="React Logo" width="40" />
 									<h5 class="h5 skill-name">React</h5>
 									<p class="skill-description">
 										Able to create more advanced React applications with wide functionality and scalability, utilising
@@ -315,7 +325,7 @@
 								<div class="title-wrapper">
 									<img
 										class="skill-image invert-colour"
-										src="assets/images/NextJS Logo.png"
+										src="assets/images/logos/NextJS.png"
 										alt="Next.JS Logo"
 										width="40" />
 									<h5 class="h5 skill-name">Next.JS</h5>
@@ -332,7 +342,7 @@
 							<!-- MySQL -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/MySQL Logo.png" alt="MySQL Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/MySQL.png" alt="MySQL Logo" width="40" />
 									<h5 class="h5 skill-name">MySQL</h5>
 									<p class="skill-description">
 										Built and maintained a relatively complex SQL database using MySQL writing schema modification
@@ -348,7 +358,7 @@
 							<!-- TypeScript -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/TypeScript Logo.png" alt="TypeScript Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/TypeScript.png" alt="TypeScript Logo" width="40" />
 									<h5 class="h5 skill-name">TypeScript</h5>
 									<p class="skill-description">
 										An reasonable understanding and application of TypeScript, with a couple of larger projects built
@@ -364,7 +374,7 @@
 							<!-- Neo4j -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/Neo4j Logo.png" alt="Neo4j Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/Neo4j.png" alt="Neo4j Logo" width="40" />
 									<h5 class="h5 skill-name">Neo4j</h5>
 									<p class="skill-description">
 										Able to read Cypher query language and write basic queries to return data via graph connections as
@@ -380,7 +390,7 @@
 							<!-- GraphQL -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/GraphQL Logo.png" alt="GraphQL Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/GraphQL.png" alt="GraphQL Logo" width="40" />
 									<h5 class="h5 skill-name">GraphQL</h5>
 									<p class="skill-description">
 										Set up a project using GraphQL queries and mutations to interact with a Neo4j graph
@@ -395,7 +405,7 @@
 							<!-- Java -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/Java Logo.png" alt="Java Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/Java.png" alt="Java Logo" width="40" />
 									<h5 class="h5 skill-name">Java</h5>
 									<p class="skill-description">
 										Capable of writing basic Java functions and able to review and correct more complex code
@@ -410,7 +420,7 @@
 							<!-- Figma -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/Figma-Logo.png" alt="Figma Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/Figma.png" alt="Figma Logo" width="40" />
 									<h5 class="h5 skill-name">Figma</h5>
 									<p class="skill-description">
 										Able to create basic designs, utilising components to build up complex designs
@@ -425,7 +435,7 @@
 							<!-- Postman -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/Postman-Logo.png" alt="Postman Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/Postman.png" alt="Postman Logo" width="40" />
 									<h5 class="h5 skill-name">Postman</h5>
 									<p class="skill-description">
 										Used on a couple of projects to verify the APIs I created for passing data from the backend to the
@@ -441,7 +451,7 @@
 							<!-- Node.JS -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/NodeJS Logo.png" alt="Node.JS Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/NodeJS.png" alt="Node.JS Logo" width="40" />
 									<h5 class="h5 skill-name">Node.JS</h5>
 									<p class="skill-description">
 										A very basic understanding of the concept of using Node.JS as a backend having used it one one large
@@ -457,7 +467,7 @@
 							<!-- SASS -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/Sass Logo.png" alt="Sass Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/Sass.png" alt="Sass Logo" width="40" />
 									<h5 class="h5 skill-name">Sass</h5>
 									<p class="skill-description">
 										Able to read and understand Sass instead of CSS but yet to begin regularly using it
@@ -472,7 +482,7 @@
 							<!-- Nest.JS -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/NestJS Logo.png" alt="Nest.JS Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/NestJS.png" alt="Nest.JS Logo" width="40" />
 									<h5 class="h5 skill-name">Nest.JS</h5>
 									<p class="skill-description">
 										A very basic understanding of the concept of Nest.JS as a Node framework
@@ -487,7 +497,7 @@
 							<!-- Storybook -->
 							<li class="skills-item">
 								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/Storybook Logo.png" alt="Storybook Logo" width="40" />
+									<img class="skill-image" src="assets/images/logos/Storybook.png" alt="Storybook Logo" width="40" />
 									<h5 class="h5 skill-name">Storybook</h5>
 									<p class="skill-description">
 										An understanding of the concept of Storybook with a few React components built within it
@@ -575,7 +585,7 @@
 										Nest.js, a Neo4j database and a Flask API to call a Python algorithm. The tool collects inputs from
 										a user, calculates several optimal DVP plans and then presents the options in several ways to enable
 										further user decisions. The tool was used as a demonstration of how the team could solve automotive
-										problems using a mathematical approach called multiple-objective optimisation via an algoithm
+										problems using a mathematical approach called multiple-objective optimisation via an algorithm
 										written in Python which the tool passes and receives data to/from via API.
 									</p>
 									<div class="timeline-text-achievement">
@@ -1264,6 +1274,10 @@
 				</article>
 			</div>
 		</main>
+
+		<!-- Import d3.js and bubbles JS file -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+		<script src="assets/js/bubbles.js"></script>
 
 		<!-- Custom JS link -->
 		<script src="assets/js/script.min.js"></script>
