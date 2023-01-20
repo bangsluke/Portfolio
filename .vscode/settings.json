@@ -9,7 +9,8 @@
 		"ionicons",
 		"mainpage",
 		"mapbox",
-		"pagebreak"
+		"pagebreak",
+		"xlink"
 	],
 	"cSpell.words": ["Ashcombe", "datapoints", "DFMEA's", "GCSEs", "Girish", "Kloss", "Pillutla", "Waymo"]
 }
