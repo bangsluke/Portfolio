@@ -4,7 +4,8 @@
 	// https://www.youtube.com/watch?v=FUJjNG4zkWY&list=PLewNEVDy7gq1qWBGS2BSOqND6c3DLt2CV&index=3&ab_channel=JonathanSoma
 
 	// Set the dimensions of the canvas / graph
-	let width = 1000,
+	let parentContainer = document.getElementById("chart");
+	let width = parentContainer.offsetWidth,
 		height = 500;
 
 	let smallestSkill = 0; // Set the smallest value of the datapoints
@@ -33,8 +34,7 @@
 		.attr("height", 1)
 		.attr("width", 1)
 		.attr("preserveAspectRatio", "none")
-		.attr("xmlns:xlink", "http://www.w3.org/1999/xlink")
-		.attr("xlink:href", "GraphQL Logo.png");
+		.attr("xmlns:xlink", "http://www.w3.org/1999/xlink");
 	// .attr("xlink:href", "assets/images/");
 
 	// Define the scale for the radius of the circles
@@ -64,7 +64,7 @@
 			.append("pattern")
 			.attr("class", "artist-pattern")
 			.attr("id", function (d) {
-				return d.name;
+				return d.id;
 			}) // Set up its attributes
 			.attr("height", "100%")
 			.attr("width", "100%")
@@ -75,7 +75,7 @@
 			.attr("preserveAspectRatio", "none")
 			.attr("xmlns:xlink", "http://www.w3.org/1999/xlink")
 			.attr("xlink:href", function (d) {
-				return d.image_path;
+				return d.imagePath;
 			});
 
 		// Add circles to the SVG
@@ -89,7 +89,7 @@
 				return radiusScale(d.value); // Set the radius of the circle to the value of the datapoint
 			})
 			.attr("fill", function (d) {
-				return "url(#" + d.name + ")";
+				return "url(#" + d.id + ")";
 			}) // Set the fill of the circle to the image
 			.on("mouseover", function (d) {
 				// When the mouse hovers over the circle, show the tooltip
