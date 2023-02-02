@@ -16,4 +16,9 @@ Postman,Postman,Postman,25,Used on a couple of projects to verify the APIs I cre
 Storybook,Storybook,Storybook,5,An understanding of the concept of Storybook with a few React components built within it,Resources,assets/images/logos/Storybook.png
 VBA,VBA,Visual Basic Application,75,Able to create detailed tools within Excel and write advanced macros for large scale automation,OtherLanguages,assets/images/logos/VBA.png
 Java,Java,Java,30,Capable of writing basic Java functions and able to review and correct more complex code,OtherLanguages,assets/images/logos/Java.png
-PowerApps,Power Apps,Power Apps,20,Test,OtherLanguages,assets/images/logos/PowerApps.png
+PowerApps,Power Apps,Power Apps,20,"Built a couple of small scale applications for reading, searching, deleting and modifying data from a SharePoint site",OtherLanguages,assets/images/logos/PowerApps.png
+Python,Python,Python,15,Able to read and make small modifications to existing scripts. Understanding of the Python library imports process,OtherLanguages,assets/images/logos/Python.png
+Flask,Flask,Flask,10,Built a single Flask API set up for a work project to enable a Python algorithm to be called from the frontend,Resources,assets/images/logos/Flask.png
+ReactNative,React Native,React Native,10,Understanding of the differences to React and how to set up a basic application,Mobile,assets/images/logos/ReactNative.png
+Expo,Expo,Expo,10,Built a single application using Expo and Expo Go to quickly visualise my results,Mobile,assets/images/logos/Expo.png
+OpenAI,OpenAI,OpenAI,5,Single test app built using the OpenAI API to understand how to connect to it,Resources,assets/images/logos/OpenAI.png
