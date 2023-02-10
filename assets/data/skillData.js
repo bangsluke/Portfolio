@@ -69,6 +69,13 @@ export const skillData = [
 				logo: "Neo4j.png",
 			},
 			{
+				name: "Google Apps Script",
+				value: 40,
+				description:
+					"Written several scripts to automate the manipulation of data in a Google Sheets file to generate data and charts for use in Automated daily emails",
+				logo: "Gas.png",
+			},
+			{
 				name: "GraphQL",
 				value: 35,
 				description: "Set up a project using GraphQL queries and mutations to interact with a Neo4j graph",
