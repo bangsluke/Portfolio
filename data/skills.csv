@@ -2,29 +2,30 @@ id,name,fullName,value,description,category,imagePath
 HTML,HTML,HTML,80,Understanding of how to structure and build sites using HTML5 and use semantic tags for the correct purposes,Frontend,assets/images/logos/HTML.png
 CSS,CSS,CSS,75,A good understanding of styling web pages through CSS and using minimal selectors,Frontend,assets/images/logos/CSS.png
 JavaScript,JavaScript,JavaScript,75,A good understanding of JavaScript concepts to build dynamic pages that respond to user requests and how best to structure large scale JavaScript projects,Frontend,assets/images/logos/JavaScript.png
-React,React,React,70,"Able to create more advanced React applications with wide functionality and scalability, utilising hooks and refactoring components down to useable functions",Frontend,assets/images/logos/React.png
-Next.JS,Next.JS,Next.JS,60,"Used Next.JS for multiple projects, utilising it's features to create dynamic and rapid applications",Frontend,assets/images/logos/NextJS.png
-TypeScript,TypeScript,TypeScript,50,"An reasonable understanding and application of TypeScript, with a couple of larger projects built using it",Frontend,assets/images/logos/TypeScript.png
-SASS,SASS,SASS,10,Able to read and understand Sass instead of CSS but yet to begin regularly using it,Frontend,assets/images/logos/SASS.png
-MySQL,MySQL,MySQL,50,Built and maintained a relatively complex SQL database using MySQL writing schema modification statements,Backend,assets/images/logos/MySQL.png
-Neo4j,Neo4j,Neo4j,40,Able to read Cypher query language and write basic queries to return data via graph connections as well as create and maintain graphs from the CLI,Backend,assets/images/logos/Neo4j.png
-GAS,Google Apps Script,Google Apps Script,40,Written several scripts to automate the manipulation of data in a Google Sheets file to generate data and charts for use in Automated daily emails,Backend,assets/images/logos/GAS.png
-GraphQL,GraphQL,GraphQL,35,Set up a project using GraphQL queries and mutations to interact with a Neo4j graph,Backend,assets/images/logos/GraphQL.png
-Node.JS,Node.JS,Node.JS,15,A very basic understanding of the concept of using Node.JS as a backend having used it one one large application,Backend,assets/images/logos/NodeJS.png
-Nest.JS,Nest.JS,Nest.JS,5,A very basic understanding of the concept of Nest.JS as a Node framework,Backend,assets/images/logos/NestJS.png
-Figma,Figma,Figma,30,"Able to create basic designs, utilising components to build up complex designs",Resources,assets/images/logos/Figma.png
-Postman,Postman,Postman,25,Used on a couple of projects to verify the APIs I created for passing data from the backend to the frontend,Resources,assets/images/logos/Postman.png
-Storybook,Storybook,Storybook,5,An understanding of the concept of Storybook with a few React components built within it,Resources,assets/images/logos/Storybook.png
 VBA,VBA,Visual Basic Application,75,Able to create detailed tools within Excel and write advanced macros for large scale automation,OtherLanguages,assets/images/logos/VBA.png
+React,React,React,70,"Able to create more advanced React applications with wide functionality and scalability, utilising hooks and refactoring components down to useable functions",Frontend,assets/images/logos/React.png
+GitHub,GitHub,GitHub,70,"Managed all of my projects via GitHub, setting up security checks and CI/CD actions across required projects",Resources,assets/images/logos/GitHub.png
+Next.JS,Next.JS,Next.JS,60,"Used Next.JS for multiple projects, utilising it's features to create dynamic and rapid applications",Frontend,assets/images/logos/NextJS.png
+GitLab,GitLab,GitLab,60,Run several projects through GitLab including setting up automated pipelines,Resources,assets/images/logos/GitLab.jpg
+TypeScript,TypeScript,TypeScript,55,"A reasonable understanding and application of TypeScript, with a couple of larger projects built using it",Frontend,assets/images/logos/TypeScript.png
+Neo4j,Neo4j,Neo4j,50,Able to read Cypher query language and write basic queries to return data via graph connections as well as create and maintain graphs from the CLI,Backend,assets/images/logos/Neo4j.png
+MySQL,MySQL,MySQL,50,Built and maintained a relatively complex SQL database using MySQL writing schema modification statements,Backend,assets/images/logos/MySQL.png
+AzureDevOps,AzureDevOps,AzureDevOps,50,"Managed a couple of projects using Azure DevOps to track progress and report on sprint progress, building report dashboards within DevOps",Resources,assets/images/logos/AzureDevOps.png
+Netlify,Netlify,Netlify,50,"Hosted the majority of my applications via Netlify, using its connectivity with GitHub to automate deployment",Resources,assets/images/logos/Netlify.png
+PowerApps,Power Apps,Power Apps,45,"Supported development of a large scale application for reading, searching, deleting and modifying data from a SharePoint site, whilst emailing users and storing assigned task data between users",OtherLanguages,assets/images/logos/PowerApps.png
+GraphQL,GraphQL,GraphQL,45,Set up a project using GraphQL queries and mutations to interact with a Neo4j graph,Backend,assets/images/logos/GraphQL.png
+GAS,Google Apps Script,Google Apps Script,40,Written several scripts to automate the manipulation of data in a Google Sheets file to generate data and charts for use in Automated daily emails,Backend,assets/images/logos/GAS.png
+PowerBI,PowerBI,PowerBI,35,Supported the design and development of several Power BI reports for internal management review,OtherLanguages,assets/images/logos/PowerBI.png
 Java,Java,Java,30,Capable of writing basic Java functions and able to review and correct more complex code,OtherLanguages,assets/images/logos/Java.png
-PowerApps,Power Apps,Power Apps,20,"Built a couple of small scale applications for reading, searching, deleting and modifying data from a SharePoint site",OtherLanguages,assets/images/logos/PowerApps.png
-Python,Python,Python,15,Able to read and make small modifications to existing scripts. Understanding of the Python library imports process,OtherLanguages,assets/images/logos/Python.png
+Figma,Figma,Figma,30,"Able to create basic designs, utilising components to build up complex designs",Resources,assets/images/logos/Figma.png
+Python,Python,Python,25,Able to write basic scripts and read and make small modifications to existing scripts. Understanding of the Python library imports process,OtherLanguages,assets/images/logos/Python.png
+Postman,Postman,Postman,25,Used on a couple of projects to verify the APIs I created for passing data from the backend to the frontend,Resources,assets/images/logos/Postman.png
+Node.JS,Node.JS,Node.JS,15,A very basic understanding of the concept of using Node.JS as a backend having used it one one large application,Backend,assets/images/logos/NodeJS.png
+PowerAutomate,Power Automate,Power Automate,10,Able to transform data via queries to extract useful data from basic data sets,OtherLanguages,assets/images/logos/PowerAutomate.png
 Flask,Flask,Flask,10,Built a single Flask API set up for a work project to enable a Python algorithm to be called from the frontend,Resources,assets/images/logos/Flask.png
+SASS,SASS,SASS,10,Able to read and understand Sass instead of CSS but yet to begin regularly using it,Frontend,assets/images/logos/SASS.png
 ReactNative,React Native,React Native,10,Understanding of the differences to React and how to set up a basic application,Mobile,assets/images/logos/ReactNative.png
 Expo,Expo,Expo,10,Built a single application using Expo and Expo Go to quickly visualise my results,Mobile,assets/images/logos/Expo.png
+Nest.JS,Nest.JS,Nest.JS,5,A very basic understanding of the concept of Nest.JS as a Node framework,Backend,assets/images/logos/NestJS.png
 OpenAI,OpenAI,OpenAI,5,Single test app built using the OpenAI API to understand how to connect to it,Resources,assets/images/logos/OpenAI.png
-AzureDevOps,AzureDevOps,AzureDevOps,40,Managed a project using Azure DevOps to track progress and report on sprint progress,Resources,assets/images/logos/AzureDevOps.png
-PowerBI,PowerBI,PowerBI,20,Able to review and update existing report structures,OtherLanguages,assets/images/logos/PowerBI.png
-GitLab,GitLab,GitLab,60,Run several projects through GitLab including setting up automated pipelines,Resources,assets/images/logos/GitLab.jpg
-GitHub,GitHub,GitHub,70,TBC,Resources,assets/images/logos/GitHub.png
-Netlify,Netlify,Netlify,50,TBC,Resources,TBC
+Storybook,Storybook,Storybook,5,An understanding of the concept of Storybook with a few React components built within it,Resources,assets/images/logos/Storybook.png
