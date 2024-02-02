@@ -9,7 +9,7 @@ A set of Portfolio pages for myself.
 <!-- Project Badges -->
 <p align="center">
     <a href="https://github.com/bangsluke/Portfolio" alt="Stable release version badge">
-        <img src="https://img.shields.io/badge/version-0.1.0-blue)" />
+        <img src="https://img.shields.io/badge/version-0.1.0-blue)" alt="Stable release version badge"/>
     </a>
     <a href="https://bangsluke-portfolio.netlify.app/">
         <img src="https://api.netlify.com/api/v1/badges/74382ffe-3ab7-4286-b952-4f39139e869c/deploy-status" alt="Netlify status badge" />
@@ -21,10 +21,10 @@ A set of Portfolio pages for myself.
 ### Built With
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=whitek">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5 Logo">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Logo">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3 Logo">
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=whitek" alt="Netlify Logo">
   <br>
 </p>
 
