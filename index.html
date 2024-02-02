@@ -1,1369 +1,2003 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>bangsluke Portfolio</title>
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/Favicon.png" type="image/x-icon" />
-		<!-- CSS link -->
-		<link rel="stylesheet" href="./assets/css/style.min.css" />
-		<!-- Google font link -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-		<style>
-			svg {
-				background: #f1f1f1;
-				background: none;
-			}
-		</style>
-	</head>
-	<body>
-		<main>
-			<!-- Sidebar -->
-			<aside class="sidebar" data-sidebar>
-				<div class="sidebar-info">
-					<!-- Add my profile picture. -->
-					<figure class="avatar-box">
-						<img
-							id="profilePicture"
-							src="assets/images/OnlineProfilePicture.png"
-							alt="bangsluke Online Profile Photo"
-							height="80"
-							width="80" />
-					</figure>
-
-					<!-- Add my name and title below my image. -->
-					<div class="info-content">
-						<h1 class="name" title="Luke Bangs">Luke Bangs</h1>
-						<p class="title">Automotive web developer</p>
-					</div>
-
-					<!-- Add a show contacts button for when in mobile mode. -->
-					<button class="info_more-btn" data-sidebar-btn>
-						<span>Show Contacts</span>
-						<ion-icon name="chevron-down"></ion-icon>
-					</button>
-				</div>
-
-				<div class="sidebar-info_more">
-					<!-- Add a line separator across the div. -->
-					<div class="separator"></div>
-
-					<!-- Add various contact details. -->
-
-					<!-- Email Address -->
-					<ul class="contacts-list">
-						<li class="contact-item">
-							<div class="icon-box">
-								<ion-icon name="mail-outline"></ion-icon>
-							</div>
-							<div class="contact-info">
-								<p class="contact-title">Email</p>
-								<a href="mailto:bangsluke@gmail.com" class="contact-link">bangsluke@gmail.com</a>
-							</div>
-						</li>
-
-						<!-- Phone Number -->
-						<li class="contact-item">
-							<div class="icon-box">
-								<ion-icon name="phone-portrait-outline"></ion-icon>
-							</div>
-							<div class="contact-info">
-								<p class="contact-title">Phone</p>
-								<a href="tel:+447584758024" class="contact-link">+44 7584 758024</a>
-							</div>
-						</li>
-
-						<!-- Birthday -->
-						<li class="contact-item">
-							<div class="icon-box">
-								<ion-icon name="calendar-outline"></ion-icon>
-							</div>
-							<div class="contact-info">
-								<p class="contact-title">Birthday</p>
-								<time datetime="1993-08-27">August 27, 1993</time>
-							</div>
-						</li>
-
-						<!-- Location -->
-						<li class="contact-item">
-							<div class="icon-box">
-								<ion-icon name="location-outline"></ion-icon>
-							</div>
-							<div class="contact-info">
-								<p class="contact-title">Location</p>
-								<address>Chelmsford, Essex, UK</address>
-							</div>
-						</li>
-					</ul>
-
-					<!-- Add a line separator across the div. -->
-					<div class="separator"></div>
-
-					<!-- Add some contact icons with further methods of contact. -->
-					<ul class="social-list">
-						<li class="social-item">
-							<a href="https://twitter.com/bangsluke" class="social-link">
-								<ion-icon name="logo-twitter"></ion-icon>
-							</a>
-						</li>
-						<li class="social-item">
-							<a href="https://github.com/bangsluke" class="social-link">
-								<ion-icon name="logo-github"></ion-icon>
-							</a>
-						</li>
-						<li class="social-item">
-							<a href="https://www.linkedin.com/in/bangsluke/" class="social-link">
-								<ion-icon name="logo-linkedin"></ion-icon>
-							</a>
-						</li>
-						<li class="social-item">
-							<a href="https://medium.com/@bangsluke" class="social-link">
-								<img src="./assets/images/Medium.jpg" alt="Medium bangsluke" width="30" height="20" />
-							</a>
-						</li>
-						<li class="social-item">
-							<a href="https://dev.to/bangsluke" class="social-link">
-								<img src="./assets/images/DevLogo.png" alt="Dev.to bangsluke" width="30" height="20" />
-							</a>
-						</li>
-					</ul>
-				</div>
-			</aside>
-			<!-- Main-content -->
-			<div class="main-content">
-				<!-- Navigation Bar -->
-				<nav class="navbar">
-					<ul class="navbar-list">
-						<li class="navbar-item">
-							<button class="navbar-link active" data-nav-link>About</button>
-						</li>
-						<li class="navbar-item">
-							<button class="navbar-link" data-nav-link>Resume</button>
-						</li>
-						<li class="navbar-item">
-							<button class="navbar-link" data-nav-link>Portfolio</button>
-						</li>
-						<li class="navbar-item">
-							<button class="navbar-link" data-nav-link>Contact</button>
-						</li>
-					</ul>
-				</nav>
-				<!-- About (About Me) -->
-				<article class="about active" data-page="about">
-					<!-- About Me Header -->
-					<header>
-						<h2 class="h2 article-title">About me</h2>
-					</header>
-					<!-- Top About Me text -->
-					<section class="about-text-section">
-						<p>
-							I am a relatively new developer, having just started to learn coding at the start of 2021. I'm keen to
-							find a challenging role in a workplace with creative room to support my strength of innovative problem
-							solving.
-						</p>
-						<p>
-							My career started in Automotive Engineering, but after five years of working as an engineer across a
-							number of OEMs, I've found myself in a developing software team, building software tools (<a
-								href="https://sdp.rle.de/#home"
-								>SDP</a
-							>
-							and a new DVP tool) to support Automotive processes. Luckily this has allowed me many opportunities to
-							develop my coding interests.
-						</p>
-						<p>
-							I'm interested in developing a few personal projects on the side. I started out with a fun web page for my
-							mates, building on our competitive nature and creating a site that ranks each of us at various sports and
-							skills. Most recently I've launched a stats website for my amateur football club (<a
-								href="http://www.dorkiniansfcstats.co.uk/"
-								>Dorkinian FC</a
-							>), allowing players to see their performance stats such as minutes played, goals and assists etc. on
-							which I've written a brief
-							<a href="https://dev.to/bangsluke/building-a-stats-website-for-a-sports-club-4g5m" target="_blank"
-								>article</a
-							>
-							on Dev.
-						</p>
-					</section>
-					<!-- What I'm Doing -->
-					<section class="service">
-						<h3 class="h3 service-title">What i'm doing</h3>
-
-						<ul class="service-list">
-							<li class="service-item">
-								<div class="service-icon-box">
-									<img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
-								</div>
-								<div class="service-content-box">
-									<h4 class="h4 service-item-title">Web development</h4>
-									<p class="service-item-text">
-										Building sites from scratch at a professional and personal side project level.
-									</p>
-								</div>
-							</li>
-
-							<li class="service-item">
-								<div class="service-icon-box">
-									<img src="./assets/images/icon-design.svg" alt="design icon" width="40" />
-								</div>
-								<div class="service-content-box">
-									<h4 class="h4 service-item-title">Web design</h4>
-									<p class="service-item-text">
-										Leading the design direction of our companies tool and sole designer for my personal projects.
-									</p>
-								</div>
-							</li>
-
-							<li class="service-item">
-								<div class="service-icon-box">
-									<img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40" />
-								</div>
-								<div class="service-content-box">
-									<h4 class="h4 service-item-title">Mobile apps</h4>
-									<p class="service-item-text">Keen interest to further develop my skills into the mobile app world.</p>
-								</div>
-							</li>
-						</ul>
-					</section>
-					<!-- My Skills -->
-					<section class="skill">
-						<h3 class="h3 skills-title">My skills</h3>
-
-						<!-- Add a div to hold the D3 bubble chart -->
-						<div id="chart"></div>
-
-						<ul class="skills-list content-card">
-							<!-- HTML -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/HTML.png" alt="HTML Logo" width="40" />
-									<h5 class="h5 skill-name">HTML</h5>
-									<p class="skill-description">
-										Understanding of how to structure and build sites using HTML5 and use semantic tags for the correct
-										purposes
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 80%"></div>
-								</div>
-							</li>
-
-							<!-- CSS -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/CSS.png" alt="CSS Logo" width="40" />
-									<h5 class="h5 skill-name">CSS</h5>
-									<p class="skill-description">
-										A good understanding of styling web pages through CSS and using minimal selectors
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 75%"></div>
-								</div>
-							</li>
-
-							<!-- JavaScript -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/JavaScript.png" alt="JavaScript Logo" width="40" />
-									<h5 class="h5 skill-name">JavaScript</h5>
-									<p class="skill-description">
-										A good understanding of JavaScript concepts to build dynamic pages that respond to user requests and
-										how best to structure large scale JavaScript projects
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 75%"></div>
-								</div>
-							</li>
-
-							<!-- Visual Basic Application -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img
-										class="skill-image"
-										src="assets/images/logos/VBA.png"
-										alt="Visual Basic Application Logo"
-										width="40" />
-									<h5 class="h5 skill-name">Visual Basic Application</h5>
-									<!-- <data value="80">80%</data> -->
-									<p class="skill-description">
-										Able to create detailed tools within Excel and write advanced macros for large scale automation
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 75%"></div>
-								</div>
-							</li>
-
-							<!-- React -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/React.png" alt="React Logo" width="40" />
-									<h5 class="h5 skill-name">React</h5>
-									<p class="skill-description">
-										Able to create more advanced React applications with wide functionality and scalability, utilising
-										hooks and refactoring components down to useable functions
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 70%"></div>
-								</div>
-							</li>
-
-							<!-- Next.JS -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img
-										class="skill-image invert-colour"
-										src="assets/images/logos/NextJS.png"
-										alt="Next.JS Logo"
-										width="40" />
-									<h5 class="h5 skill-name">Next.JS</h5>
-									<p class="skill-description">
-										Used Next.JS for multiple projects, utilising it's features to create dynamic and rapid applications
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 60%"></div>
-								</div>
-							</li>
-
-							<!-- MySQL -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/MySQL.png" alt="MySQL Logo" width="40" />
-									<h5 class="h5 skill-name">MySQL</h5>
-									<p class="skill-description">
-										Built and maintained a relatively complex SQL database using MySQL writing schema modification
-										statements
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 50%"></div>
-								</div>
-							</li>
-
-							<!-- TypeScript -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/TypeScript.png" alt="TypeScript Logo" width="40" />
-									<h5 class="h5 skill-name">TypeScript</h5>
-									<p class="skill-description">
-										An reasonable understanding and application of TypeScript, with a couple of larger projects built
-										using it
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 50%"></div>
-								</div>
-							</li>
-
-							<!-- Neo4j -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/Neo4j.png" alt="Neo4j Logo" width="40" />
-									<h5 class="h5 skill-name">Neo4j</h5>
-									<p class="skill-description">
-										Able to read Cypher query language and write basic queries to return data via graph connections as
-										well as create and maintain graphs from the CLI
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 40%"></div>
-								</div>
-							</li>
-
-							<!-- GraphQL -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/GraphQL.png" alt="GraphQL Logo" width="40" />
-									<h5 class="h5 skill-name">GraphQL</h5>
-									<p class="skill-description">
-										Set up a project using GraphQL queries and mutations to interact with a Neo4j graph
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 35%"></div>
-								</div>
-							</li>
-
-							<!-- Google Apps Script -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/GAS.png" alt="GAS Logo" width="40" />
-									<h5 class="h5 skill-name">Google Apps Script</h5>
-									<p class="skill-description">
-										Written several scripts to automate the manipulation of data in a Google Sheets file to generate
-										data and charts for use in Automated daily emails
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 10%"></div>
-								</div>
-							</li>
-
-							<!-- Java -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/Java.png" alt="Java Logo" width="40" />
-									<h5 class="h5 skill-name">Java</h5>
-									<p class="skill-description">
-										Capable of writing basic Java functions and able to review and correct more complex code
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 30%"></div>
-								</div>
-							</li>
-
-							<!-- Figma -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/Figma.png" alt="Figma Logo" width="40" />
-									<h5 class="h5 skill-name">Figma</h5>
-									<p class="skill-description">
-										Able to create basic designs, utilising components to build up complex designs
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 30%"></div>
-								</div>
-							</li>
-
-							<!-- Postman -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/Postman.png" alt="Postman Logo" width="40" />
-									<h5 class="h5 skill-name">Postman</h5>
-									<p class="skill-description">
-										Used on a couple of projects to verify the APIs I created for passing data from the backend to the
-										frontend
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 25%"></div>
-								</div>
-							</li>
-
-							<!-- Power Apps -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/PowerApps.png" alt="Power Apps Logo" width="40" />
-									<h5 class="h5 skill-name">Power Apps</h5>
-									<p class="skill-description">
-										Built a couple of small scale applications for reading, searching, deleting and modifying data from
-										a SharePoint site
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 20%"></div>
-								</div>
-							</li>
-
-							<!-- Node.JS -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/NodeJS.png" alt="Node.JS Logo" width="40" />
-									<h5 class="h5 skill-name">Node.JS</h5>
-									<p class="skill-description">
-										A very basic understanding of the concept of using Node.JS as a backend having used it one one large
-										application
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 15%"></div>
-								</div>
-							</li>
-
-							<!-- Python -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/Python.png" alt="Python Logo" width="40" />
-									<h5 class="h5 skill-name">Python</h5>
-									<p class="skill-description">
-										Able to read and make small modifications to existing scripts. Understanding of the Python library
-										imports process
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 15%"></div>
-								</div>
-							</li>
-
-							<!-- Flask -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/Flask.png" alt="Flask Logo" width="40" />
-									<h5 class="h5 skill-name">Flask</h5>
-									<p class="skill-description">
-										Built a single Flask API set up for a work project to enable a Python algorithm to be called from
-										the frontend
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 10%"></div>
-								</div>
-							</li>
-
-							<!-- SASS -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/Sass.png" alt="Sass Logo" width="40" />
-									<h5 class="h5 skill-name">Sass</h5>
-									<p class="skill-description">
-										Able to read and understand Sass instead of CSS but yet to begin regularly using it
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 10%"></div>
-								</div>
-							</li>
-
-							<!-- React Native -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img
-										class="skill-image"
-										src="assets/images/logos/ReactNative.png"
-										alt="React Native Logo"
-										width="40" />
-									<h5 class="h5 skill-name">React Native</h5>
-									<p class="skill-description">
-										Understanding of the differences to React and how to set up a basic application
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 10%"></div>
-								</div>
-							</li>
-
-							<!-- Expo -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/Expo.png" alt="Expo Logo" width="40" />
-									<h5 class="h5 skill-name">Expo</h5>
-									<p class="skill-description">
-										Built a single application using Expo and Expo Go to quickly visualise my results
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 10%"></div>
-								</div>
-							</li>
-
-							<!-- Nest.JS -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/NestJS.png" alt="Nest.JS Logo" width="40" />
-									<h5 class="h5 skill-name">Nest.JS</h5>
-									<p class="skill-description">
-										A very basic understanding of the concept of Nest.JS as a Node framework
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 5%"></div>
-								</div>
-							</li>
-
-							<!-- OpenAI -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/OpenAI.png" alt="OpenAI Logo" width="40" />
-									<h5 class="h5 skill-name">OpenAI</h5>
-									<p class="skill-description">
-										Single test app built using the OpenAI API to understand how to connect to it
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 5%"></div>
-								</div>
-							</li>
-
-							<!-- Storybook -->
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<img class="skill-image" src="assets/images/logos/Storybook.png" alt="Storybook Logo" width="40" />
-									<h5 class="h5 skill-name">Storybook</h5>
-									<p class="skill-description">
-										An understanding of the concept of Storybook with a few React components built within it
-									</p>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 5%"></div>
-								</div>
-							</li>
-						</ul>
-					</section>
-				</article>
-				<!-- Resume -->
-				<article class="resume" data-page="resume">
-					<!-- Resume Header -->
-					<header>
-						<h2 class="h2 article-title">Resume</h2>
-					</header>
-					<!-- Education Timeline -->
-					<section class="timeline">
-						<div class="title-wrapper">
-							<div class="icon-box">
-								<ion-icon name="book-outline"></ion-icon>
-							</div>
-							<h3 class="h3">Education</h3>
-						</div>
-						<ol class="timeline-list">
-							<!-- Loughborough University -->
-							<li class="timeline-item">
-								<div class="timeline-item-container">
-									<h4 class="h4 timeline-item-title">Loughborough University</h4>
-									<span>2011 — 2014</span>
-									<p class="timeline-text italic">
-										BEng. Automotive Engineering. Second Class Honours, Upper Division (2:1)
-									</p>
-									<p class="timeline-text">
-										Large range of engineering topics, exploring multiple engineering fundamentals from structures and
-										materials to vehicle aerodynamics. Final year project conducted on the numerical analysis of CNG,
-										LPG and Hydrogen turbulent premixed flames data from experiments conducted in Sydney.
-									</p>
-								</div>
-							</li>
-							<!-- Ashcombe Sixth Form College -->
-							<li class="timeline-item">
-								<div class="timeline-item-container">
-									<h4 class="h4 timeline-item-title">Ashcombe Sixth Form College</h4>
-									<span>2009 — 2011</span>
-									<p class="timeline-text italic">
-										A Levels in Mathematics (A), Physics (A) and History (A), AS Level in Economics (A)
-									</p>
-								</div>
-							</li>
-							<!-- Ashcombe School -->
-							<li class="timeline-item">
-								<div class="timeline-item-container">
-									<h4 class="h4 timeline-item-title">Ashcombe School</h4>
-									<span>2003 — 2009</span>
-									<p class="timeline-text italic">
-										9½ GCSEs including Mathematics, Science and English Literature and Language
-										<!-- 9½ GCSE's:  3 A*s (Incl. Mathematics), 5 A's (Incl. English Literature), 1½ B's (Incl. English Language) -->
-									</p>
-								</div>
-							</li>
-						</ol>
-					</section>
-
-					<!-- Experience Timeline -->
-					<section class="timeline">
-						<div class="title-wrapper">
-							<div class="icon-box">
-								<ion-icon name="book-outline"></ion-icon>
-							</div>
-							<h3 class="h3">Experience</h3>
-						</div>
-						<ol class="timeline-list">
-							<!-- RLE International - Digital Engineering Specialist -->
-							<li class="timeline-item">
-								<div class="timeline-item-container">
-									<h4 class="h4 timeline-item-title">RLE International - Digital Engineering Specialist</h4>
-									<span>Jul 2022 — Present</span>
-									<p class="timeline-text">
-										Development of online web-based applications for automotive problems. Following a couple of months
-										of 1:1 mentoring with a senior developer, I developed an MVP dashboard tool, built using Next.js,
-										Nest.js, a Neo4j database and a Flask API to call a Python algorithm. The tool collects inputs from
-										a user, calculates several optimal DVP plans and then presents the options in several ways to enable
-										further user decisions. The tool was used as a demonstration of how the team could solve automotive
-										problems using a mathematical approach called multiple-objective optimisation via an algorithm
-										written in Python which the tool passes and receives data to/from via API.
-									</p>
-									<div class="timeline-text-achievement">
-										<p class="bold">Key Achievement:</p>
-										<p class="timeline-text">
-											Development of a full stack application web-based tool to demonstrate the team's mathematical
-											solution.
-										</p>
-									</div>
-								</div>
-							</li>
-							<!-- RLE International - Data Management Analyst -->
-							<li class="timeline-item">
-								<div class="timeline-item-container">
-									<h4 class="h4 timeline-item-title">RLE International - Data Management Analyst</h4>
-									<span>2019 — Present</span>
-									<p class="timeline-text">
-										Joined an internal team in developing an automotive scalable development plan (<a
-											href="https://sdp.rle.de/#home"
-											>SDP</a
-										>), initially defining a process in Excel, and then developing this into a web-based tool. I was
-										responsible for collecting the data by interviewing experts within and outside the company and
-										collating the data into a format that we could use algorithms to automatically develop a tailored
-										timing plan for a customer.
-									</p>
-									<p class="timeline-text">
-										Responsibilities also include supporting decisions on the architecture of the tool, design of the UI
-										and managing the offshore developers in building and maintaining the tool.
-									</p>
-									<p class="timeline-text">
-										The role has allowed me to begin writing code in a number of languages, from writing test files in
-										Java, creating cypher queries on our graph database, to developing a basic React app for providing
-										support information to consultants using the tool.
-									</p>
-									<div class="timeline-text-achievement">
-										<p class="bold">Key Achievement:</p>
-										<p class="timeline-text">
-											Deployment and upkeep of a working web-based tool used by several customers.
-										</p>
-									</div>
-								</div>
-							</li>
-							<!-- RLE International - Dyson - Project Engineer -->
-							<li class="timeline-item">
-								<div class="timeline-item-container">
-									<h4 class="h4 timeline-item-title">RLE International - Dyson - Project Engineer</h4>
-									<span>2018 - 2019</span>
-									<p class="timeline-text">
-										Lead engineer for the Body Closures function group for a low volume build taking designs from
-										concept to prototype build. I also owned systems within Body Exteriors and Interiors and designed an
-										Excel BoM management tool on SharePoint to track team costs, weights and timings for all systems.
-										Design proposals presented and justified to management to confirm system functionality for financial
-										sign off. Robust resolution plans developed where required to meet extended targets.
-									</p>
-									<p class="timeline-text">
-										I also supported guiding two graduates with their initial development in Engineering.
-									</p>
-									<div class="timeline-text-achievement">
-										<p class="bold">Key Achievement:</p>
-										<p class="timeline-text">
-											Management of all Body Closures prototype designs from concept to build.
-										</p>
-									</div>
-								</div>
-							</li>
-
-							<!-- RLE International - Ford Motor Company - TVM Engineer -->
-							<li class="timeline-item">
-								<div class="timeline-item-container">
-									<h4 class="h4 timeline-item-title">RLE International - Ford Motor Company - TVM Engineer</h4>
-									<span>2016 — 2018</span>
-									<p class="timeline-text">
-										Development of lightweight rear closure door hinges to replace the current overly complex design for
-										a weight (2kg) and cost saving (lifetime saving of over $8m). Steel cast hinges incorporated with a
-										new check arm design that is common across all V363 variants. Durability action to D-Pillar
-										structure to tackle ongoing production issues. Multi-supplier cross-continental implementation in
-										three plants. Ongoing interaction with suppliers to improve assembly process for enhanced part
-										quality and testing of system.
-									</p>
-									<p class="timeline-text">
-										Ongoing progression of cost saving changes, taking ideas from concept to implementation across V362
-										& V363.
-									</p>
-									<div class="timeline-text-achievement">
-										<p class="bold">Key Achievement:</p>
-										<p class="timeline-text">Implementation of a cost saving idea saving the customer over $8m.</p>
-									</div>
-								</div>
-							</li>
-
-							<!-- RLE International - McLaren Automotive - Body Panels & Closures Project Engineer -->
-							<li class="timeline-item">
-								<div class="timeline-item-container">
-									<h4 class="h4 timeline-item-title">
-										RLE International - McLaren Automotive - Body Panels &amp; Closures Project Engineer
-									</h4>
-									<span>2015 — 2016</span>
-									<p class="timeline-text">
-										After re-locating to the customer's location, I assumed a larger number of responsibilities
-										including the delivery of an engineered automotive solution for a new super series car dihedral door
-										system. I worked directly with several suppliers, managing budgets and delivery plans from
-										development phase into prototype build.
-									</p>
-									<p class="timeline-text">
-										A range of responsibilities for individual components and assemblies including the delivery of
-										engineered automotive solutions from development phase into prototype build. Creation and
-										development of DFMEA's, Tech Specs and DVPs for the systems worked on. Direct interaction with
-										suppliers, working through concept development and feasibility to visiting the manufacturing lines
-										to ensuring timing was maintained and looking for cost down opportunities.
-									</p>
-									<p class="timeline-text">
-										Gained experience working with a range of materials and manufacturing techniques including injection
-										moulding plastics, compression moulding composites (SMC) and die casting metals.
-									</p>
-									<p class="timeline-text">
-										Involvement in prototype build phase, learning both rapid production and manufacturing processes
-										with hands on build experience during launch.
-									</p>
-									<div class="timeline-text-achievement">
-										<p class="bold">Key Achievement:</p>
-										<p class="timeline-text">Delivery of the dihedral door system.</p>
-									</div>
-								</div>
-							</li>
-
-							<!-- RLE International - McLaren Automotive - Project Support -->
-							<li class="timeline-item">
-								<div class="timeline-item-container">
-									<h4 class="h4 timeline-item-title">RLE International - McLaren Automotive - Project Support</h4>
-									<span>2014 — 2015</span>
-									<p class="timeline-text">
-										Initially after joining RLE International, I began in a project support role at a high end sports
-										car manufacturer, familiarising myself with the processes of OEMs and developing project planning
-										tools for mapping project resources. This involved creating a detailed tracking document for the
-										project engineers using Excel and VBA macros.
-									</p>
-									<div class="timeline-text-achievement">
-										<p class="bold">Key Achievement:</p>
-										<p class="timeline-text">Creation of a project tracking document later adopted by the client.</p>
-									</div>
-								</div>
-							</li>
-							<!-- Opus 2 International - Litigation Support Officer -->
-							<li class="timeline-item">
-								<div class="timeline-item-container">
-									<h4 class="h4 timeline-item-title">Opus 2 International - Litigation Support Officer</h4>
-									<span>2011 — 2014</span>
-									<p class="timeline-text">
-										Responsible for uploading and carefully ensuring legal documents were available for clients in a
-										cloud-based structured environment and delivered within strict deadlines. The time I spent here
-										showed me how to correctly conduct myself in a formal office-based job, deal with client requests
-										and helping proactively improve new working processes.
-									</p>
-									<p class="timeline-text">
-										For the final few months at Opus I was involved in programme bug testing the software and reviewing
-										the sites applications for users.
-									</p>
-									<div class="timeline-text-achievement">
-										<p class="bold">Key Achievement:</p>
-										<p class="timeline-text">Development of processes to speed up repetitive workflows.</p>
-									</div>
-								</div>
-							</li>
-						</ol>
-					</section>
-
-					<!-- Clients -->
-					<section class="clients">
-						<h3 class="h3 clients-title">Clients</h3>
-						<ul class="clients-list has-scrollbar">
-							<!-- Opus 2 International -->
-							<li class="clients-item">
-								<a href="https://www.opus2.com/">
-									<img src="assets/images/Opus 2 Logo.png" alt="Opus 2 International Logo" height="150" width="150" />
-								</a>
-							</li>
-							<!-- RLE International -->
-							<li class="clients-item">
-								<a href="https://www.rle.international/?lang=en">
-									<img
-										src="assets/images/RLE Logo - Square.png"
-										alt="RLE International Logo"
-										height="150"
-										width="193" />
-								</a>
-							</li>
-							<!-- McLaren Automotive -->
-							<li class="clients-item">
-								<a href="https://cars.mclaren.com/gb-en">
-									<img src="assets/images/McLaren Logo.png" alt="McLaren Automotive Logo" height="150" width="150" />
-								</a>
-							</li>
-							<!-- Ford Motor Company -->
-							<li class="clients-item">
-								<a href="https://www.ford.co.uk/">
-									<img src="assets/images/Ford Logo.png" alt="Ford Motor Company Logo" height="150" width="150" />
-								</a>
-							</li>
-							<!-- Dyson -->
-							<li class="clients-item">
-								<a href="https://www.dyson.co.uk/en">
-									<img src="assets/images/Dyson Logo.png" alt="Dyson Logo" height="150" width="150" />
-								</a>
-							</li>
-							<!-- SDP -->
-							<li class="clients-item">
-								<a href="https://sdp.rle.de/#home">
-									<img src="assets/images/SDP Logo.png" alt="SDP Logo" height="150" width="150" />
-								</a>
-							</li>
-							<!-- Dorkinians FC -->
-							<li class="clients-item">
-								<a href="https://www.dorkiniansfc.co.uk/">
-									<img
-										src="assets/images/Dorkinians Logo - Loading Page.webp"
-										alt="Dorkinians Logo"
-										height="150"
-										width="150" />
-								</a>
-							</li>
-						</ul>
-					</section>
-
-					<!-- References -->
-					<section class="references">
-						<h3 class="h3 references-title">References</h3>
-						<ul class="references-list has-scrollbar">
-							<!-- RLE International - Uwe Kloss -->
-							<li class="references-item">
-								<div class="content-card" data-references-item>
-									<figure class="references-avatar-box">
-										<img
-											src="./assets/images/RLE Logo - Square.png"
-											alt="RLE International Logo"
-											width="60"
-											data-references-avatar />
-									</figure>
-									<h4 class="h4 references-item-title" data-references-title>Uwe Kloss</h4>
-									<div class="references-text" data-references-text>
-										<p>Head of Digital Engineering</p>
-										<p>RLE International</p>
-										<p>Cologne, Germany</p>
-										<p>+49 (172) 3180-304</p>
-										<p>uwe.kloss@rle.de</p>
-									</div>
-								</div>
-							</li>
-							<!-- RLE International - Dr Girish Pillutla -->
-							<li class="references-item">
-								<div class="content-card" data-references-item>
-									<figure class="references-avatar-box">
-										<img
-											src="./assets/images/RLE Logo - Square.png"
-											alt="RLE International Logo"
-											width="60"
-											data-references-avatar />
-									</figure>
-									<h4 class="h4 references-item-title" data-references-title>Dr Girish Pillutla</h4>
-									<div class="references-text" data-references-text>
-										<p>Chief Engineer</p>
-										<p>Waymo</p>
-										<p>San Francisco USA</p>
-										<p>+16693429918</p>
-										<p>Girish.Pillutla@gmail.com</p>
-										<p>(Former RLE Project Manager)</p>
-									</div>
-								</div>
-							</li>
-							<!-- Opus 2 International - Taryn Auchecorne -->
-							<li class="references-item">
-								<div class="content-card" data-references-item>
-									<figure class="references-avatar-box">
-										<img
-											src="./assets/images/Opus 2 Logo.png"
-											alt="Opus 2 International Logo"
-											width="60"
-											data-references-avatar />
-									</figure>
-									<h4 class="h4 references-item-title" data-references-title>Taryn Auchecorne</h4>
-									<div class="references-text" data-references-text>
-										<p>London</p>
-										<p>EC4A 3BF</p>
-										<p>07912 945265</p>
-										<p>tauchecorne@opus2.com</p>
-										<p>(Head of Client Services)</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</section>
-				</article>
-
-				<!-- Portfolio -->
-				<article class="portfolio" data-page="portfolio">
-					<!-- Portfolio Header -->
-					<header>
-						<h2 class="h2 article-title">Portfolio</h2>
-					</header>
-					<!-- Projects Filterable Component -->
-					<section class="projects">
-						<!-- Create an unordered list of options to filter the Portfolio. -->
-						<ul class="filter-list">
-							<!-- Create an all button. -->
-							<li class="filter-item">
-								<button class="active" data-filter-btn>All</button>
-							</li>
-
-							<!-- Create a Personal Designs button. -->
-							<li class="filter-item">
-								<button data-filter-btn>Personal Designs</button>
-							</li>
-
-							<!-- Create a Work Items button. -->
-							<li class="filter-item">
-								<button data-filter-btn>Work Items</button>
-							</li>
-
-							<!-- Create a References button. -->
-							<li class="filter-item">
-								<button data-filter-btn>References</button>
-							</li>
-						</ul>
-
-						<!-- Create the same list options but in a select box for mobile. -->
-						<div class="filter-select-box">
-							<!-- Create the select box. -->
-							<button class="filter-select" data-select>
-								<div class="select-value" data-select-value>Select category</div>
-								<div class="select-icon">
-									<ion-icon name="chevron-down"></ion-icon>
-								</div>
-							</button>
-
-							<!-- Create an unordered list of options to filter the Portfolio. -->
-							<ul class="select-list">
-								<!-- Create an all button. -->
-								<li class="select-item">
-									<button data-select-item>All</button>
-								</li>
-
-								<!-- Create a Personal Designs button. -->
-								<li class="select-item">
-									<button data-select-item>Personal Designs</button>
-								</li>
-
-								<!-- Create a Work Items button. -->
-								<li class="select-item">
-									<button data-select-item>Work Items</button>
-								</li>
-
-								<!-- Create a References button. -->
-								<li class="select-item">
-									<button data-select-item>References</button>
-								</li>
-							</ul>
-						</div>
-
-						<!-- Create the list of project portfolio cards. -->
-						<ul class="project-list">
-							<!-- Add all the list items below. -->
-
-							<!-- Personal Homepage -->
-							<li class="project-item active" data-filter-item data-category="Personal Designs">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="https://bangsluke.github.io/Homepage.html" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/Homepage.png" alt="Personal Homepage" loading="lazy" />
-								</figure>
-								<h3 class="project-title">Personal Homepage</h3>
-								<p class="project-category">Personal Design</p>
-							</li>
-
-							<!-- New Tab Page -->
-							<li class="project-item active" data-filter-item data-category="Personal Designs">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="https://bangsluke.github.io/pages/NewTab.html" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/New Tab.png" alt="New Tab Page" loading="lazy" />
-								</figure>
-								<h3 class="project-title">New Tab Page</h3>
-								<p class="project-category">Personal Design</p>
-							</li>
-
-							<!-- My Travel Journal -->
-							<li class="project-item active" data-filter-item data-category="Personal Designs">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="https://bangsluke-my-travel-journal.netlify.app/" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/My Travel Journal.png" alt="My Travel Journal" loading="lazy" />
-								</figure>
-								<h3 class="project-title">My Travel Journal</h3>
-								<p class="project-category">Personal Designs</p>
-							</li>
-
-							<!-- SDP -->
-							<li class="project-item active" data-filter-item data-category="Work Items">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="https://sdp.rle.de/#home" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/SDP Page.png" alt="SDP Page" loading="lazy" />
-								</figure>
-								<h3 class="project-title">SDP</h3>
-								<p class="project-category">Work Item</p>
-							</li>
-
-							<!-- SDP Acronyms Page -->
-							<li class="project-item active" data-filter-item data-category="Work Items">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="https://sdp-dev-sites.netlify.app/pages/sdp-acronyms" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/SDP Acronyms Page.png" alt="SDP Acronyms Page" loading="lazy" />
-								</figure>
-								<h3 class="project-title">SDP Acronyms</h3>
-								<p class="project-category">Work Item</p>
-							</li>
-
-							<!-- SDP Encyclopedia Page -->
-							<li class="project-item active" data-filter-item data-category="Work Items">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="https://sdp-dev-sites.netlify.app/pages/sdp-encyclopedia" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/SDP Encyclopedia Page.png" alt="SDP Encyclopedia Page" loading="lazy" />
-								</figure>
-								<h3 class="project-title">SDP Encyclopedia</h3>
-								<p class="project-category">Work Item</p>
-							</li>
-
-							<!-- DVP Tool -->
-							<li class="project-item active" data-filter-item data-category="Work Items">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<!-- <a href="" target="_blank">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bangsluke Portfolio</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/Favicon.png"
+      type="image/x-icon"
+    />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      svg {
+        background: #f1f1f1;
+        background: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Sidebar -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <!-- Add my profile picture. -->
+          <figure class="avatar-box">
+            <img
+              id="profilePicture"
+              src="assets/images/OnlineProfilePicture.png"
+              alt="bangsluke Online Profile Photo"
+              height="80"
+              width="80"
+            />
+          </figure>
+
+          <!-- Add my name and title below my image. -->
+          <div class="info-content">
+            <h1 class="name" title="Luke Bangs">Luke Bangs</h1>
+            <p class="title">Automotive web developer</p>
+          </div>
+
+          <!-- Add a show contacts button for when in mobile mode. -->
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <!-- Add a line separator across the div. -->
+          <div class="separator"></div>
+
+          <!-- Add various contact details. -->
+
+          <!-- Email Address -->
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:bangsluke@gmail.com" class="contact-link"
+                  >bangsluke@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <!-- Phone Number -->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+447584758024" class="contact-link"
+                  >+44 7584 758024</a
+                >
+              </div>
+            </li>
+
+            <!-- Birthday -->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="1993-08-27">August 27, 1993</time>
+              </div>
+            </li>
+
+            <!-- Location -->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Chelmsford, Essex, UK</address>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Add a line separator across the div. -->
+          <div class="separator"></div>
+
+          <!-- Add some contact icons with further methods of contact. -->
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://twitter.com/bangsluke" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://github.com/bangsluke" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/bangsluke/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://medium.com/@bangsluke" class="social-link">
+                <img
+                  src="./assets/images/Medium.jpg"
+                  alt="Medium bangsluke"
+                  width="30"
+                  height="20"
+                />
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://dev.to/bangsluke" class="social-link">
+                <img
+                  src="./assets/images/DevLogo.png"
+                  alt="Dev.to bangsluke"
+                  width="30"
+                  height="20"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- Main-content -->
+      <div class="main-content">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- About (About Me) and Skills -->
+        <article class="about active" data-page="about">
+          <!-- About Me Header -->
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <!-- Top About Me text -->
+          <section class="about-text-section">
+            <p>
+              I am a relatively new developer, having just started to learn
+              coding at the start of 2021. I'm keen to find a challenging role
+              in a workplace with creative room to support my strength of
+              innovative problem solving.
+            </p>
+            <p>
+              My career started in Automotive Engineering, but after five years
+              of working as an engineer across a number of OEMs, I've found
+              myself in a developing software team, building software tools (<a
+                href="https://sdp.rle.de/#home"
+                >SDP</a
+              >
+              and a new DVP tool) to support Automotive processes. Luckily this
+              has allowed me many opportunities to develop my coding interests.
+            </p>
+            <p>
+              I'm interested in developing a few personal projects on the side.
+              I started out with a fun web page for my mates, building on our
+              competitive nature and creating a site that ranks each of us at
+              various sports and skills. Most recently I've launched a stats
+              website for my amateur football club (<a
+                href="http://www.dorkiniansfcstats.co.uk/"
+                >Dorkinian FC</a
+              >), allowing players to see their performance stats such as
+              minutes played, goals and assists etc. on which I've written a
+              brief
+              <a
+                href="https://dev.to/bangsluke/building-a-stats-website-for-a-sports-club-4g5m"
+                target="_blank"
+                >article</a
+              >
+              on Dev.
+            </p>
+          </section>
+
+          <!-- What I'm Doing -->
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+                  <p class="service-item-text">
+                    Building sites from scratch at a professional and personal
+                    side project level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
+                  <p class="service-item-text">
+                    Leading the design direction of our companies tool and sole
+                    designer for my personal projects.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
+                  <p class="service-item-text">
+                    Keen interest to further develop my skills into the mobile
+                    app world.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- My Skills -->
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <!-- Add a div to hold the D3 bubble chart -->
+            <div id="chart"></div>
+
+            <ul class="skills-list content-card">
+              <!-- HTML -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/HTML.png"
+                    alt="HTML Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">HTML</h5>
+                  <p class="skill-description">
+                    Understanding of how to structure and build sites using
+                    HTML5 and use semantic tags for the correct purposes
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <!-- CSS -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/CSS.png"
+                    alt="CSS Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">CSS</h5>
+                  <p class="skill-description">
+                    A good understanding of styling web pages through CSS and
+                    using minimal selectors
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <!-- JavaScript -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/JavaScript.png"
+                    alt="JavaScript Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">JavaScript</h5>
+                  <p class="skill-description">
+                    A good understanding of JavaScript concepts to build dynamic
+                    pages that respond to user requests and how best to
+                    structure large scale JavaScript projects
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <!-- Visual Basic Application -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/VBA.png"
+                    alt="Visual Basic Application Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Visual Basic Application</h5>
+                  <!-- <data value="80">80%</data> -->
+                  <p class="skill-description">
+                    Able to create detailed tools within Excel and write
+                    advanced macros for large scale automation
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <!-- React -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/React.png"
+                    alt="React Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">React</h5>
+                  <p class="skill-description">
+                    Able to create more advanced React applications with wide
+                    functionality and scalability, utilising hooks and
+                    refactoring components down to useable functions
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <!-- GitHub -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image invert-colour"
+                    src="assets/images/logos/GitHub.png"
+                    alt="GitHub Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">GitHub</h5>
+                  <p class="skill-description">
+                    Managed all of my projects via GitHub, setting up security
+                    checks and CI/CD actions across required projects
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <!-- Next.JS -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image invert-colour"
+                    src="assets/images/logos/NextJS.png"
+                    alt="Next.JS Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Next.JS</h5>
+                  <p class="skill-description">
+                    Used Next.JS for multiple projects, utilising it's features
+                    to create dynamic and rapid applications
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <!-- GitLab -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/GitLab.jpg"
+                    alt="GitLab Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">GitLab</h5>
+                  <p class="skill-description">
+                    Run several projects through GitLab including setting up
+                    automated pipelines
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <!-- TypeScript -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/TypeScript.png"
+                    alt="TypeScript Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">TypeScript</h5>
+                  <p class="skill-description">
+                    A reasonable understanding and application of TypeScript,
+                    with a couple of larger projects built using it
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 55%"></div>
+                </div>
+              </li>
+
+              <!-- Neo4j -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/Neo4j.png"
+                    alt="Neo4j Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Neo4j</h5>
+                  <p class="skill-description">
+                    Able to read Cypher query language and write basic queries
+                    to return data via graph connections as well as create and
+                    maintain graphs from the CLI
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <!-- MySQL -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/MySQL.png"
+                    alt="MySQL Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">MySQL</h5>
+                  <p class="skill-description">
+                    Built and maintained a relatively complex SQL database using
+                    MySQL writing schema modification statements
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <!-- Azure DevOps -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/AzureDevOps.png"
+                    alt="Azure DevOps Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Azure DevOps</h5>
+                  <p class="skill-description">
+                    Managed a couple of projects using Azure DevOps to track
+                    progress and report on sprint progress, building report
+                    dashboards within DevOps
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <!-- Netlify -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/Netlify.png"
+                    alt="Netlify Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Netlify</h5>
+                  <p class="skill-description">
+                    Hosted the majority of my applications via Netlify, using
+                    its connectivity with GitHub to automate deployment
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <!-- Power Apps -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/PowerApps.png"
+                    alt="Power Apps Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Power Apps</h5>
+                  <p class="skill-description">
+                    Supported development of a large scale application for
+                    reading, searching, deleting and modifying data from a
+                    SharePoint site, whilst emailing users and storing assigned
+                    task data between users
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 45%"></div>
+                </div>
+              </li>
+
+              <!-- GraphQL -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/GraphQL.png"
+                    alt="GraphQL Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">GraphQL</h5>
+                  <p class="skill-description">
+                    Set up a project using GraphQL queries and mutations to
+                    interact with a Neo4j graph and developed detail queries
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 45%"></div>
+                </div>
+              </li>
+
+              <!-- Google Apps Script -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/GAS.png"
+                    alt="GAS Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Google Apps Script</h5>
+                  <p class="skill-description">
+                    Written several scripts to automate the manipulation of data
+                    in a Google Sheets file to generate data and charts for use
+                    in Automated daily emails
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%"></div>
+                </div>
+              </li>
+
+              <!-- Power BI -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/PowerBI.png"
+                    alt="Power BI Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Power BI</h5>
+                  <p class="skill-description">
+                    Supported the design and development of several Power BI
+                    reports for internal management review
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 35%"></div>
+                </div>
+              </li>
+
+              <!-- Java -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/Java.png"
+                    alt="Java Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Java</h5>
+                  <p class="skill-description">
+                    Capable of writing basic Java functions and able to review
+                    and correct more complex code
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+
+              <!-- Figma -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/Figma.png"
+                    alt="Figma Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Figma</h5>
+                  <p class="skill-description">
+                    Able to create basic designs, utilising components to build
+                    up complex designs
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+
+              <!-- Python -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/Python.png"
+                    alt="Python Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Python</h5>
+                  <p class="skill-description">
+                    Able to write basic scripts and read and make small
+                    modifications to existing scripts. Understanding of the
+                    Python library imports process
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 25%"></div>
+                </div>
+              </li>
+
+              <!-- Postman -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/Postman.png"
+                    alt="Postman Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Postman</h5>
+                  <p class="skill-description">
+                    Used on a couple of projects to verify the APIs I created
+                    for passing data from the backend to the frontend
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 25%"></div>
+                </div>
+              </li>
+
+              <!-- Node.JS -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/NodeJS.png"
+                    alt="Node.JS Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Node.JS</h5>
+                  <p class="skill-description">
+                    A very basic understanding of the concept of using Node.JS
+                    as a backend having used it one one large application
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 15%"></div>
+                </div>
+              </li>
+
+              <!-- Power Automate -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/PowerAutomate.png"
+                    alt="Power Automate Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Power Automate</h5>
+                  <p class="skill-description">
+                    Able to transform data via queries to extract useful data
+                    from basic data sets
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 10%"></div>
+                </div>
+              </li>
+
+              <!-- Flask -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/Flask.png"
+                    alt="Flask Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Flask</h5>
+                  <p class="skill-description">
+                    Built a single Flask API set up for a work project to enable
+                    a Python algorithm to be called from the frontend
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 10%"></div>
+                </div>
+              </li>
+
+              <!-- SASS -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/Sass.png"
+                    alt="Sass Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Sass</h5>
+                  <p class="skill-description">
+                    Able to read and understand Sass instead of CSS but yet to
+                    begin regularly using it
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 10%"></div>
+                </div>
+              </li>
+
+              <!-- React Native -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/ReactNative.png"
+                    alt="React Native Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">React Native</h5>
+                  <p class="skill-description">
+                    Understanding of the differences to React and how to set up
+                    a basic application
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 10%"></div>
+                </div>
+              </li>
+
+              <!-- Expo -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/Expo.png"
+                    alt="Expo Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Expo</h5>
+                  <p class="skill-description">
+                    Built a single application using Expo and Expo Go to quickly
+                    visualise my results
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 10%"></div>
+                </div>
+              </li>
+
+              <!-- Nest.JS -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/NestJS.png"
+                    alt="Nest.JS Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Nest.JS</h5>
+                  <p class="skill-description">
+                    A very basic understanding of the concept of Nest.JS as a
+                    Node framework
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 5%"></div>
+                </div>
+              </li>
+
+              <!-- OpenAI -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/OpenAI.png"
+                    alt="OpenAI Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">OpenAI</h5>
+                  <p class="skill-description">
+                    Single test app built using the OpenAI API to understand how
+                    to connect to it
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 5%"></div>
+                </div>
+              </li>
+
+              <!-- Storybook -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    class="skill-image"
+                    src="assets/images/logos/Storybook.png"
+                    alt="Storybook Logo"
+                    width="40"
+                  />
+                  <h5 class="h5 skill-name">Storybook</h5>
+                  <p class="skill-description">
+                    An understanding of the concept of Storybook with a few
+                    React components built within it
+                  </p>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 5%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Resume -->
+        <article class="resume" data-page="resume">
+          <!-- Resume Header -->
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+          <!-- Education Timeline -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline-list">
+              <!-- Loughborough University -->
+              <li class="timeline-item">
+                <div class="timeline-item-container">
+                  <h4 class="h4 timeline-item-title">
+                    Loughborough University
+                  </h4>
+                  <span>2011 — 2014</span>
+                  <p class="timeline-text italic">
+                    BEng. Automotive Engineering. Second Class Honours, Upper
+                    Division (2:1)
+                  </p>
+                  <p class="timeline-text">
+                    Large range of engineering topics, exploring multiple
+                    engineering fundamentals from structures and materials to
+                    vehicle aerodynamics. Final year project conducted on the
+                    numerical analysis of CNG, LPG and Hydrogen turbulent
+                    premixed flames data from experiments conducted in Sydney.
+                  </p>
+                </div>
+              </li>
+              <!-- Ashcombe Sixth Form College -->
+              <li class="timeline-item">
+                <div class="timeline-item-container">
+                  <h4 class="h4 timeline-item-title">
+                    Ashcombe Sixth Form College
+                  </h4>
+                  <span>2009 — 2011</span>
+                  <p class="timeline-text italic">
+                    A Levels in Mathematics (A), Physics (A) and History (A), AS
+                    Level in Economics (A)
+                  </p>
+                </div>
+              </li>
+              <!-- Ashcombe School -->
+              <li class="timeline-item">
+                <div class="timeline-item-container">
+                  <h4 class="h4 timeline-item-title">Ashcombe School</h4>
+                  <span>2003 — 2009</span>
+                  <p class="timeline-text italic">
+                    9½ GCSEs including Mathematics, Science and English
+                    Literature and Language
+                    <!-- 9½ GCSE's:  3 A*s (Incl. Mathematics), 5 A's (Incl. English Literature), 1½ B's (Incl. English Language) -->
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <!-- Experience Timeline -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+            <ol class="timeline-list">
+              <!-- RLE International - Digital Engineering Specialist -->
+              <li class="timeline-item">
+                <div class="timeline-item-container">
+                  <h4 class="h4 timeline-item-title">
+                    RLE International - Digital Engineering Specialist
+                  </h4>
+                  <span>Jul 2022 — Present</span>
+                  <p class="timeline-text">
+                    Development of online web-based applications for automotive
+                    problems. Following a couple of months of 1:1 mentoring with
+                    a senior developer, I developed an MVP dashboard tool, built
+                    using Next.js, Nest.js, a Neo4j database and a Flask API to
+                    call a Python algorithm. The tool collects inputs from a
+                    user, calculates several optimal DVP plans and then presents
+                    the options in several ways to enable further user
+                    decisions. The tool was used as a demonstration of how the
+                    team could solve automotive problems using a mathematical
+                    approach called multiple-objective optimisation via an
+                    algorithm written in Python which the tool passes and
+                    receives data to/from via API.
+                  </p>
+                  <div class="timeline-text-achievement">
+                    <p class="bold">Key Achievement:</p>
+                    <p class="timeline-text">
+                      Development of a full stack application web-based tool to
+                      demonstrate the team's mathematical solution.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- RLE International - Data Management Analyst -->
+              <li class="timeline-item">
+                <div class="timeline-item-container">
+                  <h4 class="h4 timeline-item-title">
+                    RLE International - Data Management Analyst
+                  </h4>
+                  <span>2019 — Present</span>
+                  <p class="timeline-text">
+                    Joined an internal team in developing an automotive scalable
+                    development plan (<a href="https://sdp.rle.de/#home">SDP</a
+                    >), initially defining a process in Excel, and then
+                    developing this into a web-based tool. I was responsible for
+                    collecting the data by interviewing experts within and
+                    outside the company and collating the data into a format
+                    that we could use algorithms to automatically develop a
+                    tailored timing plan for a customer.
+                  </p>
+                  <p class="timeline-text">
+                    Responsibilities also include supporting decisions on the
+                    architecture of the tool, design of the UI and managing the
+                    offshore developers in building and maintaining the tool.
+                  </p>
+                  <p class="timeline-text">
+                    The role has allowed me to begin writing code in a number of
+                    languages, from writing test files in Java, creating Cypher
+                    queries on our graph database, to developing a basic React
+                    app for providing support information to consultants using
+                    the tool.
+                  </p>
+                  <div class="timeline-text-achievement">
+                    <p class="bold">Key Achievement:</p>
+                    <p class="timeline-text">
+                      Deployment and upkeep of a working web-based tool used by
+                      several customers.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- RLE International - Dyson - Project Engineer -->
+              <li class="timeline-item">
+                <div class="timeline-item-container">
+                  <h4 class="h4 timeline-item-title">
+                    RLE International - Dyson - Project Engineer
+                  </h4>
+                  <span>2018 - 2019</span>
+                  <p class="timeline-text">
+                    Lead engineer for the Body Closures function group for a low
+                    volume build taking designs from concept to prototype build.
+                    I also owned systems within Body Exteriors and Interiors and
+                    designed an Excel BoM management tool on SharePoint to track
+                    team costs, weights and timings for all systems. Design
+                    proposals presented and justified to management to confirm
+                    system functionality for financial sign off. Robust
+                    resolution plans developed where required to meet extended
+                    targets.
+                  </p>
+                  <p class="timeline-text">
+                    I also supported guiding two graduates with their initial
+                    development in Engineering.
+                  </p>
+                  <div class="timeline-text-achievement">
+                    <p class="bold">Key Achievement:</p>
+                    <p class="timeline-text">
+                      Management of all Body Closures prototype designs from
+                      concept to build.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- RLE International - Ford Motor Company - TVM Engineer -->
+              <li class="timeline-item">
+                <div class="timeline-item-container">
+                  <h4 class="h4 timeline-item-title">
+                    RLE International - Ford Motor Company - TVM Engineer
+                  </h4>
+                  <span>2016 — 2018</span>
+                  <p class="timeline-text">
+                    Development of lightweight rear closure door hinges to
+                    replace the current overly complex design for a weight (2kg)
+                    and cost saving (lifetime saving of over $8m). Steel cast
+                    hinges incorporated with a new check arm design that is
+                    common across all V363 variants. Durability action to
+                    D-Pillar structure to tackle ongoing production issues.
+                    Multi-supplier cross-continental implementation in three
+                    plants. Ongoing interaction with suppliers to improve
+                    assembly process for enhanced part quality and testing of
+                    system.
+                  </p>
+                  <p class="timeline-text">
+                    Ongoing progression of cost saving changes, taking ideas
+                    from concept to implementation across V362 & V363.
+                  </p>
+                  <div class="timeline-text-achievement">
+                    <p class="bold">Key Achievement:</p>
+                    <p class="timeline-text">
+                      Implementation of a cost saving idea saving the customer
+                      over $8m.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- RLE International - McLaren Automotive - Body Panels & Closures Project Engineer -->
+              <li class="timeline-item">
+                <div class="timeline-item-container">
+                  <h4 class="h4 timeline-item-title">
+                    RLE International - McLaren Automotive - Body Panels &amp;
+                    Closures Project Engineer
+                  </h4>
+                  <span>2015 — 2016</span>
+                  <p class="timeline-text">
+                    After re-locating to the customer's location, I assumed a
+                    larger number of responsibilities including the delivery of
+                    an engineered automotive solution for a new super series car
+                    dihedral door system. I worked directly with several
+                    suppliers, managing budgets and delivery plans from
+                    development phase into prototype build.
+                  </p>
+                  <p class="timeline-text">
+                    A range of responsibilities for individual components and
+                    assemblies including the delivery of engineered automotive
+                    solutions from development phase into prototype build.
+                    Creation and development of DFMEA's, Tech Specs and DVPs for
+                    the systems worked on. Direct interaction with suppliers,
+                    working through concept development and feasibility to
+                    visiting the manufacturing lines to ensuring timing was
+                    maintained and looking for cost down opportunities.
+                  </p>
+                  <p class="timeline-text">
+                    Gained experience working with a range of materials and
+                    manufacturing techniques including injection moulding
+                    plastics, compression moulding composites (SMC) and die
+                    casting metals.
+                  </p>
+                  <p class="timeline-text">
+                    Involvement in prototype build phase, learning both rapid
+                    production and manufacturing processes with hands on build
+                    experience during launch.
+                  </p>
+                  <div class="timeline-text-achievement">
+                    <p class="bold">Key Achievement:</p>
+                    <p class="timeline-text">
+                      Delivery of the dihedral door system.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- RLE International - McLaren Automotive - Project Support -->
+              <li class="timeline-item">
+                <div class="timeline-item-container">
+                  <h4 class="h4 timeline-item-title">
+                    RLE International - McLaren Automotive - Project Support
+                  </h4>
+                  <span>2014 — 2015</span>
+                  <p class="timeline-text">
+                    Initially after joining RLE International, I began in a
+                    project support role at a high end sports car manufacturer,
+                    familiarising myself with the processes of OEMs and
+                    developing project planning tools for mapping project
+                    resources. This involved creating a detailed tracking
+                    document for the project engineers using Excel and VBA
+                    macros.
+                  </p>
+                  <div class="timeline-text-achievement">
+                    <p class="bold">Key Achievement:</p>
+                    <p class="timeline-text">
+                      Creation of a project tracking document later adopted by
+                      the client.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- Opus 2 International - Litigation Support Officer -->
+              <li class="timeline-item">
+                <div class="timeline-item-container">
+                  <h4 class="h4 timeline-item-title">
+                    Opus 2 International - Litigation Support Officer
+                  </h4>
+                  <span>2011 — 2014</span>
+                  <p class="timeline-text">
+                    Responsible for uploading and carefully ensuring legal
+                    documents were available for clients in a cloud-based
+                    structured environment and delivered within strict
+                    deadlines. The time I spent here showed me how to correctly
+                    conduct myself in a formal office-based job, deal with
+                    client requests and helping proactively improve new working
+                    processes.
+                  </p>
+                  <p class="timeline-text">
+                    For the final few months at Opus I was involved in programme
+                    bug testing the software and reviewing the sites
+                    applications for users.
+                  </p>
+                  <div class="timeline-text-achievement">
+                    <p class="bold">Key Achievement:</p>
+                    <p class="timeline-text">
+                      Development of processes to speed up repetitive workflows.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <!-- Clients -->
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
+            <ul class="clients-list has-scrollbar">
+              <!-- Opus 2 International -->
+              <li class="clients-item">
+                <a href="https://www.opus2.com/">
+                  <img
+                    src="assets/images/Opus 2 Logo.png"
+                    alt="Opus 2 International Logo"
+                    height="150"
+                    width="150"
+                  />
+                </a>
+              </li>
+              <!-- RLE International -->
+              <li class="clients-item">
+                <a href="https://www.rle.international/?lang=en">
+                  <img
+                    src="assets/images/RLE Logo - Square.png"
+                    alt="RLE International Logo"
+                    height="150"
+                    width="193"
+                  />
+                </a>
+              </li>
+              <!-- McLaren Automotive -->
+              <li class="clients-item">
+                <a href="https://cars.mclaren.com/gb-en">
+                  <img
+                    src="assets/images/McLaren Logo.png"
+                    alt="McLaren Automotive Logo"
+                    height="150"
+                    width="150"
+                  />
+                </a>
+              </li>
+              <!-- Ford Motor Company -->
+              <li class="clients-item">
+                <a href="https://www.ford.co.uk/">
+                  <img
+                    src="assets/images/Ford Logo.png"
+                    alt="Ford Motor Company Logo"
+                    height="150"
+                    width="150"
+                  />
+                </a>
+              </li>
+              <!-- Dyson -->
+              <li class="clients-item">
+                <a href="https://www.dyson.co.uk/en">
+                  <img
+                    src="assets/images/Dyson Logo.png"
+                    alt="Dyson Logo"
+                    height="150"
+                    width="150"
+                  />
+                </a>
+              </li>
+              <!-- SDP -->
+              <li class="clients-item">
+                <a href="https://sdp.rle.de/#home">
+                  <img
+                    src="assets/images/SDP Logo.png"
+                    alt="SDP Logo"
+                    height="150"
+                    width="150"
+                  />
+                </a>
+              </li>
+              <!-- Dorkinians FC -->
+              <li class="clients-item">
+                <a href="https://www.dorkiniansfc.co.uk/">
+                  <img
+                    src="assets/images/Dorkinians Logo - Loading Page.webp"
+                    alt="Dorkinians Logo"
+                    height="150"
+                    width="150"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- References -->
+          <section class="references">
+            <h3 class="h3 references-title">References</h3>
+            <ul class="references-list has-scrollbar">
+              <!-- RLE International - Uwe Kloss -->
+              <li class="references-item">
+                <div class="content-card" data-references-item>
+                  <figure class="references-avatar-box">
+                    <img
+                      src="./assets/images/RLE Logo - Square.png"
+                      alt="RLE International Logo"
+                      width="60"
+                      data-references-avatar
+                    />
+                  </figure>
+                  <h4 class="h4 references-item-title" data-references-title>
+                    Uwe Kloss
+                  </h4>
+                  <div class="references-text" data-references-text>
+                    <p>Head of Digital Engineering</p>
+                    <p>RLE International</p>
+                    <p>Cologne, Germany</p>
+                    <p>+49 (172) 3180-304</p>
+                    <p>uwe.kloss@rle.de</p>
+                  </div>
+                </div>
+              </li>
+              <!-- RLE International - Dr Girish Pillutla -->
+              <li class="references-item">
+                <div class="content-card" data-references-item>
+                  <figure class="references-avatar-box">
+                    <img
+                      src="./assets/images/RLE Logo - Square.png"
+                      alt="RLE International Logo"
+                      width="60"
+                      data-references-avatar
+                    />
+                  </figure>
+                  <h4 class="h4 references-item-title" data-references-title>
+                    Dr Girish Pillutla
+                  </h4>
+                  <div class="references-text" data-references-text>
+                    <p>Chief Engineer</p>
+                    <p>Waymo</p>
+                    <p>San Francisco USA</p>
+                    <p>+16693429918</p>
+                    <p>Girish.Pillutla@gmail.com</p>
+                    <p>(Former RLE Project Manager)</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Opus 2 International - Taryn Auchecorne -->
+              <li class="references-item">
+                <div class="content-card" data-references-item>
+                  <figure class="references-avatar-box">
+                    <img
+                      src="./assets/images/Opus 2 Logo.png"
+                      alt="Opus 2 International Logo"
+                      width="60"
+                      data-references-avatar
+                    />
+                  </figure>
+                  <h4 class="h4 references-item-title" data-references-title>
+                    Taryn Auchecorne
+                  </h4>
+                  <div class="references-text" data-references-text>
+                    <p>London</p>
+                    <p>EC4A 3BF</p>
+                    <p>07912 945265</p>
+                    <p>tauchecorne@opus2.com</p>
+                    <p>(Head of Client Services)</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Portfolio -->
+        <article class="portfolio" data-page="portfolio">
+          <!-- Portfolio Header -->
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+          <!-- Projects Filterable Component -->
+          <section class="projects">
+            <!-- Create an unordered list of options to filter the Portfolio. -->
+            <ul class="filter-list">
+              <!-- Create an all button. -->
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <!-- Create a Personal Designs button. -->
+              <li class="filter-item">
+                <button data-filter-btn>Personal Designs</button>
+              </li>
+
+              <!-- Create a Work Items button. -->
+              <li class="filter-item">
+                <button data-filter-btn>Work Items</button>
+              </li>
+
+              <!-- Create a References button. -->
+              <li class="filter-item">
+                <button data-filter-btn>References</button>
+              </li>
+            </ul>
+
+            <!-- Create the same list options but in a select box for mobile. -->
+            <div class="filter-select-box">
+              <!-- Create the select box. -->
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <!-- Create an unordered list of options to filter the Portfolio. -->
+              <ul class="select-list">
+                <!-- Create an all button. -->
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <!-- Create a Personal Designs button. -->
+                <li class="select-item">
+                  <button data-select-item>Personal Designs</button>
+                </li>
+
+                <!-- Create a Work Items button. -->
+                <li class="select-item">
+                  <button data-select-item>Work Items</button>
+                </li>
+
+                <!-- Create a References button. -->
+                <li class="select-item">
+                  <button data-select-item>References</button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Create the list of project portfolio cards. -->
+            <ul class="project-list">
+              <!-- Add all the list items below. -->
+
+              <!-- Personal Homepage -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Personal Designs"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://bangsluke.github.io/Homepage.html"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/Homepage.png"
+                    alt="Personal Homepage"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Personal Homepage</h3>
+                <p class="project-category">Personal Design</p>
+              </li>
+
+              <!-- New Tab Page -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Personal Designs"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://bangsluke.github.io/pages/NewTab.html"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/New Tab.png"
+                    alt="New Tab Page"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">New Tab Page</h3>
+                <p class="project-category">Personal Design</p>
+              </li>
+
+              <!-- Big Lynn 2023 Page -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Personal Designs"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://biglynn2023.netlify.app/info"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/BigLynn2023.png"
+                    alt="Big Lynn 2023 Page"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Big Lynn 2023 Page</h3>
+                <p class="project-category">Personal Designs</p>
+              </li>
+
+              <!-- SDP -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Work Items"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://sdp.rle.de/#home" target="_blank">
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/SDP Page.png"
+                    alt="SDP Page"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">SDP</h3>
+                <p class="project-category">Work Item</p>
+              </li>
+
+              <!-- SDP Acronyms Page -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Work Items"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://sdp-dev-sites.netlify.app/pages/sdp-acronyms"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/SDP Acronyms Page.png"
+                    alt="SDP Acronyms Page"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">SDP Acronyms</h3>
+                <p class="project-category">Work Item</p>
+              </li>
+
+              <!-- SDP Encyclopedia Page -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Work Items"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://sdp-dev-sites.netlify.app/pages/sdp-encyclopedia"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/SDP Encyclopedia Page.png"
+                    alt="SDP Encyclopedia Page"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">SDP Encyclopedia</h3>
+                <p class="project-category">Work Item</p>
+              </li>
+
+              <!-- DVP Tool -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Work Items"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <!-- <a href="" target="_blank">
 											<ion-icon name="link"></ion-icon>
 										</a> -->
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/DVP Tool.png" alt="DVP Tool" loading="lazy" />
-								</figure>
-								<h3 class="project-title">DVP Tool</h3>
-								<p class="project-category">Work Item</p>
-							</li>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/DVP Tool.png"
+                    alt="DVP Tool"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">DVP Tool</h3>
+                <p class="project-category">Work Item</p>
+              </li>
 
-							<!-- Dorkinians Stat Page -->
-							<li class="project-item active" data-filter-item data-category="Personal Designs">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="http://www.dorkiniansfcstats.co.uk/" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/Dorkinians Stat Page.png" alt="Dorkinians Stat Page" loading="lazy" />
-								</figure>
-								<h3 class="project-title">Dorkinians FC Stat Page</h3>
-								<p class="project-category">Personal Design</p>
-							</li>
+              <!-- StrataMotiv Landing Page -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Work Items"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="http://stratamotiv.netlify.app/" target="_blank">
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/StrataMotiv.png"
+                    alt="StrataMotiv Landing Page"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">StrataMotiv Landing Page</h3>
+                <p class="project-category">Work Item</p>
+              </li>
 
-							<!-- Dorkinians - TOTW Mobile View -->
-							<li class="project-item active" data-filter-item data-category="Personal Designs">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="http://www.dorkiniansfcstats.co.uk/" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img
-										src="./assets/images/Dorkinians Stat Page - Mobile 1.jpg"
-										alt="Dorkinians Stat Page - Mobile 1"
-										loading="lazy" />
-								</figure>
-								<h3 class="project-title">TOTW Mobile View</h3>
-								<p class="project-category">Personal Design</p>
-							</li>
+              <!-- Dorkinians Stat Page -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Personal Designs"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="http://www.dorkiniansfcstats.co.uk/"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/Dorkinians Stat Page.png"
+                    alt="Dorkinians Stat Page"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Dorkinians FC Stat Page</h3>
+                <p class="project-category">Personal Design</p>
+              </li>
 
-							<!-- Dorkinians - Comparison Mobile View -->
-							<li class="project-item active" data-filter-item data-category="Personal Designs">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="http://www.dorkiniansfcstats.co.uk/" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img
-										src="./assets/images/Dorkinians Stat Page - Mobile 2.jpg"
-										alt="Dorkinians Stat Page - Mobile 2"
-										loading="lazy" />
-								</figure>
-								<h3 class="project-title">Comparison Mobile View</h3>
-								<p class="project-category">Personal Design</p>
-							</li>
+              <!-- Dorkinians - TOTW Mobile View -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Personal Designs"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="http://www.dorkiniansfcstats.co.uk/"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/Dorkinians Stat Page - Mobile 1.jpg"
+                    alt="Dorkinians Stat Page - Mobile 1"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">TOTW Mobile View</h3>
+                <p class="project-category">Personal Design</p>
+              </li>
 
-							<!-- Therapist Mobile Chat App -->
-							<li class="project-item active" data-filter-item data-category="Personal Designs">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="https://github.com/bangsluke/chat-mobile-app" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/Chat App.jpg" alt="Therapist Mobile Chat App" loading="lazy" />
-								</figure>
-								<h3 class="project-title">Therapist Mobile Chat App</h3>
-								<p class="project-category">Personal Design</p>
-							</li>
+              <!-- Dorkinians - Comparison Mobile View -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Personal Designs"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="http://www.dorkiniansfcstats.co.uk/"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/Dorkinians Stat Page - Mobile 2.jpg"
+                    alt="Dorkinians Stat Page - Mobile 2"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Comparison Mobile View</h3>
+                <p class="project-category">Personal Design</p>
+              </li>
 
-							<!-- Group Page -->
-							<li class="project-item active" data-filter-item data-category="Personal Designs">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="https://group-page.netlify.app/#da39a3ee5e6b4b0d3255bfef95601890afd80709" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/Group Page.png" alt="Group Page" loading="lazy" />
-								</figure>
-								<h3 class="project-title">Group Page</h3>
-								<p class="project-category">Personal Designs</p>
-							</li>
+              <!-- Therapist Mobile Chat App -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Personal Designs"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://github.com/bangsluke/chat-mobile-app"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/Chat App.jpg"
+                    alt="Therapist Mobile Chat App"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Therapist Mobile Chat App</h3>
+                <p class="project-category">Personal Design</p>
+              </li>
 
-							<!-- Meme Generator Page -->
-							<li class="project-item active" data-filter-item data-category="References">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="https://bangsluke-meme-generator.netlify.app/" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/Meme Generator Page.png" alt="Meme Generator Page" loading="lazy" />
-								</figure>
-								<h3 class="project-title">Meme Generator Page</h3>
-								<p class="project-category">Reference</p>
-							</li>
+              <!-- Group Page -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Personal Designs"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://group-page.netlify.app/#da39a3ee5e6b4b0d3255bfef95601890afd80709"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/Group Page.png"
+                    alt="Group Page"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Group Page</h3>
+                <p class="project-category">Personal Designs</p>
+              </li>
 
-							<!-- Airbnb Static Page Clone -->
-							<li class="project-item active" data-filter-item data-category="References">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="https://bangsluke-airbnb-clone.netlify.app/" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/Airbnb Clone.png" alt="Airbnb Static Page Clone" loading="lazy" />
-								</figure>
-								<h3 class="project-title">Airbnb Static Page Clone</h3>
-								<p class="project-category">Reference</p>
-							</li>
+              <!-- My Travel Journal -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Personal Designs"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://bangsluke-my-travel-journal.netlify.app/"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/My Travel Journal.png"
+                    alt="My Travel Journal"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">My Travel Journal</h3>
+                <p class="project-category">Personal Designs</p>
+              </li>
 
-							<!-- Final Year Project -->
-							<li class="project-item active" data-filter-item data-category="References" id="FinalYearProject">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a
-											href="https://drive.google.com/file/d/14lZuALado2j_CpgzZbOzX4wg_3zoowuD/view?usp=sharing"
-											target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/Final Year Project.png" alt="Final Year Project" loading="lazy" />
-								</figure>
-								<h3 class="project-title">Final Year Project</h3>
-								<p class="project-category">Reference</p>
-							</li>
+              <!-- Meme Generator Page -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="References"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://bangsluke-meme-generator.netlify.app/"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/Meme Generator Page.png"
+                    alt="Meme Generator Page"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Meme Generator Page</h3>
+                <p class="project-category">Reference</p>
+              </li>
 
-							<!-- Coding References Page -->
-							<li class="project-item active" data-filter-item data-category="References">
-								<figure class="project-img">
-									<div class="project-item-icon-box">
-										<a href="https://github.com/bangsluke/Code-Learning-And-Test-Site#readme" target="_blank">
-											<ion-icon name="link"></ion-icon>
-										</a>
-										<ion-icon name="eye-outline"></ion-icon>
-										<ion-icon name="information-circle-outline"></ion-icon>
-									</div>
-									<img src="./assets/images/Coding References Page.png" alt="Coding References Page" loading="lazy" />
-								</figure>
-								<h3 class="project-title">Coding References Page</h3>
-								<p class="project-category">Reference</p>
-							</li>
-						</ul>
-					</section>
-				</article>
+              <!-- Airbnb Static Page Clone -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="References"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://bangsluke-airbnb-clone.netlify.app/"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/Airbnb Clone.png"
+                    alt="Airbnb Static Page Clone"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Airbnb Static Page Clone</h3>
+                <p class="project-category">Reference</p>
+              </li>
 
-				<!-- Contact -->
-				<article class="contact" data-page="contact">
-					<!-- Contact Header -->
-					<header>
-						<h2 class="h2 article-title">Contact</h2>
-					</header>
+              <!-- Final Year Project -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="References"
+                id="FinalYearProject"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://drive.google.com/file/d/14lZuALado2j_CpgzZbOzX4wg_3zoowuD/view?usp=sharing"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/Final Year Project.png"
+                    alt="Final Year Project"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Final Year Project</h3>
+                <p class="project-category">Reference</p>
+              </li>
 
-					<!-- Add a section of how best to contact me. -->
-					<section class="contact-form">
-						<!-- <h3 class="h3 form-title">Contact Me</h3> -->
+              <!-- Coding References Page -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="References"
+              >
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a
+                      href="https://github.com/bangsluke/Code-Learning-And-Test-Site#readme"
+                      target="_blank"
+                    >
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/Coding References Page.png"
+                    alt="Coding References Page"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Coding References Page</h3>
+                <p class="project-category">Reference</p>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-						<section class="contact-me-section">
-							<p>
-								The best way to contact me is by email at
-								<a href="mailto:bangsluke@gmail.com">bangsluke@gmail.com,</a>
-								send me a Whatsapp message on
-								<a href="tel:+447584758024" class="contact-link">+44 7584 758024</a>
-								or drop me a message on
-								<a href="https://www.linkedin.com/in/bangsluke/" class="contact-link">LinkedIn.</a>
-							</p>
-						</section>
-					</section>
+        <!-- Contact -->
+        <article class="contact" data-page="contact">
+          <!-- Contact Header -->
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-					<!-- Add an iframe holding a map to Chelmsford. -->
-					<section class="mapbox" data-mapbox>
-						<figure>
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39542.25395381769!2d0.44409452560330487!3d51.7258857458084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d892c32191ebe3%3A0xaed2af1e3fcaaaf0!2sChelmsford!5e0!3m2!1sen!2suk!4v1647804159986!5m2!1sen!2suk"
-								width="400"
-								height="300"
-								loading="lazy"></iframe>
-						</figure>
-					</section>
+          <!-- Add a section of how best to contact me. -->
+          <section class="contact-form">
+            <!-- <h3 class="h3 form-title">Contact Me</h3> -->
 
-					<!-- Hide the contact form until I know how to make it work. -->
-					<section class="contact-form">
-						<!-- <h3 class="h3 form-title">Contact Form</h3>
+            <section class="contact-me-section">
+              <p>
+                The best way to contact me is by email at
+                <a href="mailto:bangsluke@gmail.com">bangsluke@gmail.com,</a>
+                send me a Whatsapp message on
+                <a href="tel:+447584758024" class="contact-link"
+                  >+44 7584 758024</a
+                >
+                or drop me a message on
+                <a
+                  href="https://www.linkedin.com/in/bangsluke/"
+                  class="contact-link"
+                  >LinkedIn.</a
+                >
+              </p>
+            </section>
+          </section>
+
+          <!-- Add an iframe holding a map to Chelmsford. -->
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39542.25395381769!2d0.44409452560330487!3d51.7258857458084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d892c32191ebe3%3A0xaed2af1e3fcaaaf0!2sChelmsford!5e0!3m2!1sen!2suk!4v1647804159986!5m2!1sen!2suk"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <!-- Hide the contact form until I know how to make it work. -->
+          <section class="contact-form">
+            <!-- <h3 class="h3 form-title">Contact Form</h3>
 
             <form action="#" class="form" data-form>
               <div class="input-wrapper">
@@ -1399,20 +2033,26 @@
                 <span>Send Message</span>
                             </button>
                             </form> -->
-					</section>
-				</article>
-			</div>
-		</main>
+          </section>
+        </article>
+      </div>
+    </main>
 
-		<!-- Import d3.js and bubbles JS file -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
-		<script src="assets/js/bubbles.js"></script>
+    <!-- Import d3.js and bubbles JS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+    <script src="assets/js/bubbles.js"></script>
 
-		<!-- Custom JS link -->
-		<script src="assets/js/script.min.js"></script>
+    <!-- Custom JS link -->
+    <script src="assets/js/script.min.js"></script>
 
-		<!-- Import ionicons -->
-		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-	</body>
+    <!-- Import ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
